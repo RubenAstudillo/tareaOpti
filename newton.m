@@ -1,0 +1,26 @@
+function [iter, x1] = newton (maxIter, alpha, inv_hessian_fun, grad_fun, x0)
+  ## grad_fun{1} sera la derivada en x y grad_fun{2} derivada en y
+  ## inv_hessian es el gradiente ya inverso con {x,y} las derivadas x y.
+  tol = 0.0001;
+  iter = 1;
+
+  grad_eval = [ grad_fun{1}(num2cell(x0){:}), ...
+                grad_fun{2}(num2cell(x0){:}) ]
+  inv_hessian_eval = [ inv_hessian_fun{1,1}(num2cell(x0){:}), ...
+                       inv_hessian_fun{1,2}(num2cell(x0){:}); ...
+                       inv_hessian_fun{2,1}(num2cell(x0){:}), ...
+                       inv_hessian_fun{2,2}(num2cell(x0){:}) ];
+
+  while (norm(grad_eval) >= tol && iter < maxIter)
+    x1 = x0 - alpha * (grad_eval * inv_hessian_eval);
+
+    grad_eval = [ grad_fun{1}(num2cell(x1){:}), ...
+                  grad_fun{2}(num2cell(x1){:}) ];
+    inv_hessian_eval = [ inv_hessian_fun{1,1}(num2cell(x1){:}), ...
+                         inv_hessian_fun{1,2}(num2cell(x1){:}); ...
+                         inv_hessian_fun{2,1}(num2cell(x1){:}), ...
+                         inv_hessian_fun{2,2}(num2cell(x1){:}) ];
+    x0 = x1;
+    iter = iter + 1;
+  end
+end
