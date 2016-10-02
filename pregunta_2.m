@@ -20,3 +20,19 @@ fun_hess = { @(x,y) -2/(2*(y+1)^2 + (x-2)^2+1)^2 + ...
                (32*(y+1)^2)/(2*(y+1)^2+(x-2)^2+1)^3 + ...
                (22.4*(y-2)^2)/(2*(y-2)^2+(x+1)^2+1)^3 - ...
                2.8/(2*(y-2)^2+(x+1)^2+1)^2 };
+
+
+# [x y] = [12.677 24.275] es cerca del resultado
+points = {[1.5 -2.5] [1.5 2.5] [0 0] [1 1] [-3 -3]};
+
+sprintf('x0 alpha lambda iteraciones punto-final')
+for x0 = 1:5
+  for (alpha = linspace(0.05,1,10))
+    for (lambda = linspace(0.05,1,10))
+      [iter, x1] = levenbert(10000, alpha, lambda, fun_hess, ...
+                             fun_grad, points{x0});
+      sprintf('(%.2f, %.2f) %.3f %.3f %d (%.2f, %.2f)', points{x0}(1), ...
+              points{x0}(2), alpha, lambda, iter, x1(1), x1(2))
+    end
+  end
+end
