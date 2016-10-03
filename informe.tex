@@ -1,0 +1,150 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[letterpaper]{geometry}
+\usepackage[log-declarations=false]{xparse}
+\usepackage[quiet]{fontspec}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{polyglossia}
+
+\setdefaultlanguage{spanish}
+
+\begin{document}
+\title{Optimizacion No Lineal: Tarea 1}
+\author{Ruben Astudillo \\ 201021009-k}
+\date{\today}
+\maketitle
+
+\section*{Pregunta 1}
+\noindent Para los ejemplos \(1\) y \(2\) de la ayudantia varie el
+parametro \(\alpha\) y compare sus resultados. Para que valores de
+\(\alpha\) no se tiene convergencia. Utilizar los metodos de maximo
+descenso y de Newton.
+\newline
+
+Se analisaran individualmente cada una de las combinaciones. Para
+desarrollar estos se realizaron en \texttt{octave} en vez de
+\texttt{Matlab} por lo que pueden haber incompatibilidades que se me
+hayan pasado por alto.󠀿
+
+\subsection*{Ejemplo 1 con maximo descenso}
+\noindent Nuestra funcion corresponde a
+\[ f(x,y) = -10 + x^2 + y^2\]
+\[ \nabla f (x,y) = [2 x , 2 y ] \]
+Es claro que esta obtiene su minimo en \((0,0)\), por lo que podremos
+comparar con respecto a este que tan lejos de la solucion termino el
+algoritmo. El codigo se encuentra en la primera mitad del archivo
+\texttt{pregunta\_1.m} donde se define \texttt{primer\_ej}
+correspondiente a la funcion anterior. Dado que el punto inicial esta
+dado en el ejemplo en \(x_0 = (2.5, 1.5)\) se respeta este valor como
+partida, ademas utilizamos una toleracian de \(10e4\)
+\begin{verbatim}
+ans = Maximo descenso ejemplo1: x0 = (1.50, 2.50)
+ans = alpha = 0.10, iteraciones =    51, final = (0.00, 0.00)
+ans = alpha = 0.20, iteraciones =    23, final = (0.00, 0.00)
+ans = alpha = 0.30, iteraciones =    13, final = (0.00, 0.00)
+ans = alpha = 0.50, iteraciones =     2, final = (0.00, 0.00)
+ans = alpha = 0.70, iteraciones =    13, final = (0.00, 0.00)
+ans = alpha = 0.75, iteraciones =    17, final = (0.00, 0.00)
+ans = alpha = 0.80, iteraciones =    23, final = (0.00, 0.00)
+ans = alpha = 0.85, iteraciones =    32, final = (-0.00, -0.00)
+ans = alpha = 0.90, iteraciones =    51, final = (0.00, 0.00)
+ans = alpha = 0.95, iteraciones =   106, final = (-0.00, -0.00)
+ans = alpha = 0.98, iteraciones =   270, final = (-0.00, -0.00)
+ans = alpha = 1.00, iteraciones = 10000, final = (-1.50, -2.50)
+ans = alpha = 1.20, iteraciones =  2108, final = (-Inf, NaN)
+ans = ultimo caso hay divergencia. Convergencia si alpha < 1
+\end{verbatim}
+Vemos que a medida que el \(\alpha\) tiende a \(1\) le cantidad de
+iteraciones va llegando al limite y despues de este las soluciones se
+alejan del minimo \((0,0)\). Por tanto diremos que para \(\alpha < 1\)
+el algoritmo de maximo descendo converge.
+
+\subsection*{Ejemplo 1 con metodo de newton}
+\noindent Similarmente que en la seccion anterior dados los mismos
+parametros de inicio y toleracia junto con el hessiano de nuestra funcion
+\[ H(x,y) =
+  \begin{pmatrix}
+    2 & 0 \\
+    0 & 2
+  \end{pmatrix}
+  \qquad
+  H^{-1}(x,y) =
+  \begin{pmatrix}
+    0.5 & 0 \\
+    0 & 0.5
+  \end{pmatrix}
+\]
+Se obtienen los siguientes resultados
+\begin{verbatim}
+ans = newton ejemplo1: x0 = (1.50, 2.50)
+ans = alpha = 1.00, iteraciones =     2, final = (0.00, 0.00)
+ans = alpha = 1.20, iteraciones =     8, final = (-0.00, -0.00)
+ans = alpha = 1.40, iteraciones =    13, final = (0.00, 0.00)
+ans = alpha = 1.60, iteraciones =    23, final = (0.00, 0.00)
+ans = alpha = 1.80, iteraciones =    51, final = (0.00, 0.00)
+ans = alpha = 1.90, iteraciones =   106, final = (-0.00, -0.00)
+ans = alpha = 1.95, iteraciones =   215, final = (0.00, 0.00)
+ans = alpha = 1.99, iteraciones =  1093, final = (0.00, 0.00)
+ans = alpha = 2.00, iteraciones = 10000, final = (-1.50, -2.50)
+ans = alpha = 2.10, iteraciones =  7433, final = (NaN, NaN)
+ans = ultimo caso hay divergencia. Convergencia si alpha < 2
+\end{verbatim}
+Por lo que concluimos que para \(\alpha < 2\) hay convergencia.
+
+\subsection*{Ejemplo 2 con maximo descenso}
+\noindent Nuestra funcion cambia a
+\[ f(x,y) = -10 + 3 x^2 + y^2 \]
+\[ \nabla f (x,y) = [6 x , 2 y ] \]
+Nuestras parametro siguen siendo iguales
+\begin{verbatim}
+ans = maximo descenso ejemplo2: x0 = (1.50, 2.50)
+ans = alpha = 0.20000, iteraciones =    23, final = (0.00, 0.00)
+ans = alpha = 0.25000, iteraciones =    18, final = (-0.00, 0.00)
+ans = alpha = 0.30000, iteraciones =    53, final = (0.00, 0.00)
+ans = alpha = 0.32000, iteraciones =   138, final = (-0.00, 0.00)
+ans = alpha = 0.33000, iteraciones =   566, final = (-0.00, 0.00)
+ans = alpha = 0.33333, iteraciones = 10000, final = (-1.50, 0.00)
+ans = alpha = 0.35000, iteraciones =  7428, final = (NaN, 0.00)
+ans = ultimo caso hay divergencia. Convergencia si alpha < (1/3)
+\end{verbatim}
+Por lo que concluimos que para \(\alpha < \frac 1 3 \) hay convergencia.
+
+\subsection*{Ejemplo 2 con metodo de Newton}
+\noindent Necesitamos calcular el hessiano de nuestra funcion
+\[ H(x,y) =
+  \begin{pmatrix}
+    6 & 0 \\
+    0 & 2
+  \end{pmatrix}
+  \qquad
+  H^{-1}(x,y) =
+  \begin{pmatrix}
+    \frac{1}{6} & 0 \\
+    0 & 0.5
+  \end{pmatrix}
+\]
+\begin{verbatim}
+ans = newton ejemplo2: x0 = (1.50, 2.50)
+ans = alpha = 1.40, iteraciones =    14, final = (-0.00, -0.00)
+ans = alpha = 1.60, iteraciones =    24, final = (-0.00, -0.00)
+ans = alpha = 1.80, iteraciones =    53, final = (0.00, 0.00)
+ans = alpha = 1.90, iteraciones =   111, final = (0.00, 0.00)
+ans = alpha = 1.95, iteraciones =   227, final = (0.00, 0.00)
+ans = alpha = 1.98, iteraciones =   573, final = (0.00, 0.00)
+ans = alpha = 1.99, iteraciones =  1150, final = (-0.00, -0.00)
+ans = alpha = 2.00, iteraciones = 10000, final = (-1.50, -2.50)
+ans = alpha = 2.10, iteraciones =  7427, final = (Inf, NaN)
+ans = ultimo caso hay divergencia. Convergencia si alpha < 2
+\end{verbatim}
+por tanto se concluye que para \(\alpha < 2\) se converge.
+
+\section*{Pregunta 2}
+\noindent Minimice la funcion
+\[ p(x,y) = \frac{1}{1 + (x-2)^2 + 2 (y+1)^2} + \frac{0.7}{1 + (x+1)^2 +
+    2 (y - 2)^2 } \]
+Utilizando el metodo de \emph{Leverberg-Marquardt}. Intente con distintos
+valores de \(\alpha, \lambda\). Pruebe ademas con los valores iniciales
+\((1.5, -2.5), (1.5, 2.5), (0,0), (1,1), (-3,-3)\). Compare los resultados.
+\end{document}
