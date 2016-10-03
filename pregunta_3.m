@@ -1,4 +1,21 @@
-tol = 10000;
+## Dices que newton converge bien para muchos alfas.  Que punto de partida y alfas usaste?
+## Use 0,0
+## Use 2,2
+## Y use 50,50
+## Creo
+## Y alfa entre 0.1 y 1.4
+## Mm mm tendré que cachar que onda con esos parámetros
+## Con el 1.4 es muy extremadamente oscilante
+## Pero converge
+## Sii
+## Por eso te decia
+## Y el metodo de max descenso igual converge
+## Y para máximo descenso también converge pero lento ( mas o menos mismos parámetro )
+## Pero leeento y para valores qlos de alfa
+## Nope
+## Alfa le puse 0.001
+## Cob alfa 0.1 la wea diverge
+maxIter = 10000;
 
 fun = @(x,y) 100*(y - x^2)^2 + (1 - x)^2;
 
@@ -15,45 +32,45 @@ fun_inv_hess = ...
    @(x,y) (-400*y+1200*x^2-2)/(200*(-400*y+1200*x^2-2)-160000*x^2) };
 
 ## Suponiendo que queremos minimizar pues asi cerca de (0,0) esta la
-## solucion.
+## solucion. usaremos los siguientes puntos de partida
 x0 = [2.5 3.5];
+puntos = {[2.5 3.5] [0,0] [5 6] [-1 -4]};
+
 formatMax = 'x1 = (%.2f, %.2f), alpha = %.2f, iter = %d, valor = %.2f';
+formatMaxAlt = 'x0 = (%.2f, %.2f), x1 = (%.2f, %.2f), alpha = %.4f, iter = %d, valor = %.2f';
 
 # no converge nunca
-for alpha = linspace(0.1,1,20)
-  [iter, x1] = max_descent(tol, 0.1, fun_grad, x0);
-  value = fun(num2cell(x1){:});
-  sprintf(formatMax, x1(1), x1(2), alpha, iter, value)
-end
-
-# cerca de 0.42 converge
-for alpha = linspace(0.4,0.5,10)
-  [iter, x1] = newton(tol, alpha, fun_inv_hess, fun_grad, x0);
-  value = fun(num2cell(x1){:});
-  sprintf(formatMax, x1(1), x1(2), alpha, iter, value)
-end
-
-formatLev = 'x1 = (%.2f, %.2f), lambda = %.2f, alpha = %.2f, iter = %d, valor = %.2f';
-for lambda = linspace(0.2,0.5,10)
-  for alpha = linspace(0.2,0.5,10)
-    ## [iter, x1] = levenbert(tol, 0.20, 0.25, fun_hess, fun_grad, x0)
-    [iter, x1] = levenbert(tol, alpha, lambda, fun_hess, fun_grad, x0);
+for i = 1:4
+  for alpha = linspace(0.0001,0.01,100)
+    [iter, x1] = max_descent(maxIter, alpha, fun_grad, puntos{i});
     value = fun(num2cell(x1){:});
-    sprintf(formatLev, x1(1), x1(2), lambda, alpha, iter, value)
+    sprintf(formatMaxAlt, puntos{i}(1), puntos{i}(2), x1(1), x1(2), ...
+            alpha, iter, value)
   end
 end
 
-## for (i=1:1:100)
-##   x(i)=-5+i*0.2;
-##   y(i)=-5+i*0.2;
-## end
+sprintf('\nEmpieza el segundo')
 
-## for (i=1:1:100)
-##   for(j=1:1:100)
-##     z(j,i) = min( fun(x(i),y(j)), 150);
-##   end
-## end
+# cerca de 0.42 converge
+for i = 1:4
+  for alpha = linspace(0.1,0.95,20)
+    [iter, x1] = newton(maxIter, alpha, fun_inv_hess, fun_grad, puntos{i});
+    value = fun(num2cell(x1){:});
+    sprintf(formatMaxAlt, puntos{i}(1), puntos{i}(2), ...
+            x1(1), x1(2), alpha, iter, value)
+  end
+end
 
-## figure
-## meshc(x,y,z)
-## view(-47,25)
+sprintf('\nEmpieza el tercero')
+formatLev = 'x0 = (%.2f, %.2f), x1 = (%.2f, %.2f), lambda = %.2f, alpha = %.2f, iter = %d, valor = %.2f';
+for i = 1:4
+  for lambda = linspace(0.2,0.5,10)
+    for alpha = linspace(0.2,0.5,10)
+      [iter, x1] = levenbert(maxIter, alpha, lambda, fun_hess, fun_grad, ...
+                             puntos{i});
+      value = fun(num2cell(x1){:});
+      sprintf(formatLev, puntos{i}(1), puntos{i}(2), ...
+              x1(1), x1(2), lambda, alpha, iter, value)
+    end
+  end
+end
