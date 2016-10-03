@@ -22,7 +22,6 @@ fun_hess = { @(x,y) -2/(2*(y+1)^2 + (x-2)^2+1)^2 + ...
                2.8/(2*(y-2)^2+(x+1)^2+1)^2 };
 
 
-# [x y] = [12.677 24.275] es cerca del resultado
 points = {[1.5 -2.5] [1.5 2.5] [0 0] [1 1] [-3 -3]};
 
 sprintf('x0 alpha lambda iteraciones punto-final')
