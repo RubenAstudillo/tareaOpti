@@ -1,0 +1,130 @@
+ans = x1 = (Inf, Inf), alpha = 0.10, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.15, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.19, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.24, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.29, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.34, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.38, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.43, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.48, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.53, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.57, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.62, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.67, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.72, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.76, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.81, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.86, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.91, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 0.95, iter = 7, valor = NaN
+ans = x1 = (Inf, Inf), alpha = 1.00, iter = 7, valor = NaN
+ans = x1 = (-7.57, 57.26), alpha = 0.40, iter = 10000, valor = 74.40
+ans = x1 = (0.96, 0.91), alpha = 0.41, iter = 10000, valor = 0.01
+ans = x1 = (1.00, 1.00), alpha = 0.42, iter = 10000, valor = 0.00
+ans = x1 = (1.07, 1.14), alpha = 0.43, iter = 10000, valor = 0.00
+ans = x1 = (13.09, 171.12), alpha = 0.44, iter = 10000, valor = 147.56
+ans = x1 = (-24.40, 595.08), alpha = 0.46, iter = 10000, valor = 649.03
+ans = x1 = (1.26, 1.58), alpha = 0.47, iter = 10000, valor = 0.09
+ans = x1 = (1.00, 1.00), alpha = 0.48, iter = 10000, valor = 0.00
+ans = x1 = (-1.11, 0.72), alpha = 0.49, iter = 10000, valor = 31.37
+ans = x1 = (4.69, 21.90), alpha = 0.50, iter = 10000, valor = 13.97
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.20, iter = 112, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.23, iter = 97, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.27, iter = 85, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.30, iter = 76, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.33, iter = 68, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.37, iter = 62, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.40, iter = 57, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.43, iter = 53, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.47, iter = 49, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.50, iter = 46, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.20, iter = 116, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.23, iter = 100, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.27, iter = 87, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.30, iter = 78, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.33, iter = 70, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.37, iter = 64, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.40, iter = 59, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.43, iter = 54, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.47, iter = 50, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.50, iter = 47, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.20, iter = 119, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.23, iter = 103, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.27, iter = 90, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.30, iter = 80, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.33, iter = 72, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.37, iter = 66, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.40, iter = 61, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.43, iter = 56, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.47, iter = 52, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.50, iter = 48, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.20, iter = 124, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.23, iter = 106, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.27, iter = 93, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.30, iter = 83, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.33, iter = 75, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.37, iter = 68, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.40, iter = 62, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.43, iter = 58, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.47, iter = 54, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.50, iter = 50, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.20, iter = 128, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.23, iter = 110, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.27, iter = 96, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.30, iter = 86, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.33, iter = 77, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.37, iter = 70, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.40, iter = 64, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.43, iter = 60, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.47, iter = 55, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.50, iter = 52, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.20, iter = 132, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.23, iter = 113, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.27, iter = 99, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.30, iter = 88, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.33, iter = 80, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.37, iter = 72, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.40, iter = 66, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.43, iter = 61, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.47, iter = 57, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.50, iter = 53, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.20, iter = 136, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.23, iter = 117, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.27, iter = 102, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.30, iter = 91, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.33, iter = 82, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.37, iter = 75, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.40, iter = 69, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.43, iter = 63, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.47, iter = 59, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.50, iter = 55, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.20, iter = 140, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.23, iter = 121, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.27, iter = 106, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.30, iter = 94, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.33, iter = 85, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.37, iter = 77, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.40, iter = 71, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.43, iter = 65, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.47, iter = 61, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.50, iter = 56, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.20, iter = 145, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.23, iter = 124, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.27, iter = 109, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.30, iter = 97, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.33, iter = 87, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.37, iter = 79, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.40, iter = 73, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.43, iter = 67, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.47, iter = 62, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.50, iter = 58, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.20, iter = 149, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.23, iter = 128, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.27, iter = 112, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.30, iter = 100, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.33, iter = 90, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 82, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.40, iter = 75, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.43, iter = 69, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.47, iter = 64, valor = 0.00
+ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.50, iter = 60, valor = 0.00

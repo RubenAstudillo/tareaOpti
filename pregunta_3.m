@@ -1,3 +1,5 @@
+tol = 10000;
+
 fun = @(x,y) 100*(y - x^2)^2 + (1 - x)^2;
 
 fun_grad = {@(x,y) -400*x*(y - x^2) - 2*(1-x), ...
@@ -13,17 +15,33 @@ fun_inv_hess = ...
    @(x,y) (-400*y+1200*x^2-2)/(200*(-400*y+1200*x^2-2)-160000*x^2) };
 
 ## Suponiendo que queremos minimizar pues asi cerca de (0,0) esta la
-## solucion. Usaremos el mismo punto de partida en (3,4)
+## solucion.
 x0 = [2.5 3.5];
+formatMax = 'x1 = (%.2f, %.2f), alpha = %.2f, iter = %d, valor = %.2f';
 
-[iter, x1] = max_descent(10000, 0.1, fun_grad, x0)
-fun(num2cell(x1){:})
+# no converge nunca
+for alpha = linspace(0.1,1,20)
+  [iter, x1] = max_descent(tol, 0.1, fun_grad, x0);
+  value = fun(num2cell(x1){:});
+  sprintf(formatMax, x1(1), x1(2), alpha, iter, value)
+end
 
-[iter, x1] = newton(10000, 0.22, fun_inv_hess, fun_grad, x0)
-fun(num2cell(x1){:})
+# cerca de 0.42 converge
+for alpha = linspace(0.4,0.5,10)
+  [iter, x1] = newton(tol, alpha, fun_inv_hess, fun_grad, x0);
+  value = fun(num2cell(x1){:});
+  sprintf(formatMax, x1(1), x1(2), alpha, iter, value)
+end
 
-[iter, x1] = levenbert(10000, 0.20, 0.25, fun_hess, fun_grad, x0)
-fun(num2cell(x1){:})
+formatLev = 'x1 = (%.2f, %.2f), lambda = %.2f, alpha = %.2f, iter = %d, valor = %.2f';
+for lambda = linspace(0.2,0.5,10)
+  for alpha = linspace(0.2,0.5,10)
+    ## [iter, x1] = levenbert(tol, 0.20, 0.25, fun_hess, fun_grad, x0)
+    [iter, x1] = levenbert(tol, alpha, lambda, fun_hess, fun_grad, x0);
+    value = fun(num2cell(x1){:});
+    sprintf(formatLev, x1(1), x1(2), lambda, alpha, iter, value)
+  end
+end
 
 ## for (i=1:1:100)
 ##   x(i)=-5+i*0.2;
