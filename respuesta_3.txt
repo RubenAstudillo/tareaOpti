@@ -1,884 +1,246 @@
 ans = x0 = (2.50, 3.50), x1 = (1.79, 3.20), alpha = 0.0001, iter = 10000, valor = 0.62
-ans = x0 = (2.50, 3.50), x1 = (1.67, 2.81), alpha = 0.0002, iter = 10000, valor = 0.46
-ans = x0 = (2.50, 3.50), x1 = (1.56, 2.44), alpha = 0.0003, iter = 10000, valor = 0.32
-ans = x0 = (2.50, 3.50), x1 = (1.45, 2.11), alpha = 0.0004, iter = 10000, valor = 0.20
-ans = x0 = (2.50, 3.50), x1 = (1.34, 1.81), alpha = 0.0005, iter = 10000, valor = 0.12
-ans = x0 = (2.50, 3.50), x1 = (1.24, 1.55), alpha = 0.0006, iter = 10000, valor = 0.06
-ans = x0 = (2.50, 3.50), x1 = (1.15, 1.33), alpha = 0.0007, iter = 10000, valor = 0.02
-ans = x0 = (2.50, 3.50), x1 = (1.08, 1.16), alpha = 0.0008, iter = 10000, valor = 0.01
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.01), alpha = 0.0009, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.61, 2.60), alpha = 0.0003, iter = 10000, valor = 0.37
+ans = x0 = (2.50, 3.50), x1 = (1.44, 2.07), alpha = 0.0004, iter = 10000, valor = 0.19
+ans = x0 = (2.50, 3.50), x1 = (1.28, 1.63), alpha = 0.0006, iter = 10000, valor = 0.08
+ans = x0 = (2.50, 3.50), x1 = (1.14, 1.29), alpha = 0.0007, iter = 10000, valor = 0.02
+ans = x0 = (2.50, 3.50), x1 = (1.02, 1.05), alpha = 0.0009, iter = 10000, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (0.99, 0.98), alpha = 0.0010, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (0.99, 0.99), alpha = 0.0011, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 0.99), alpha = 0.0012, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0013, iter = 11, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0014, iter = 10, valor = NaN
+ans = x0 = (2.50, 3.50), x1 = (1.01, 1.01), alpha = 0.0012, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0013, iter = 11, valor = NaN
 ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0015, iter = 10, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0016, iter = 11, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0017, iter = 11, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0018, iter = 12, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0019, iter = 10, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0020, iter = 9, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0021, iter = 9, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0022, iter = 9, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0023, iter = 9, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0024, iter = 9, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0025, iter = 9, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0026, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0027, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0028, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0029, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0030, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0031, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0032, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0033, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0034, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0035, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0036, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0037, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0038, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0039, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0040, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0041, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0042, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0043, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0044, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0045, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0046, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0047, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0048, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0049, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0050, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0051, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0052, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0053, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (-Inf, Inf), alpha = 0.0054, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0055, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0056, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0057, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0058, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0059, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0060, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0061, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0062, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0063, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0064, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0065, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0066, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0067, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0068, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0069, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0070, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0071, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0072, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0073, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0074, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0075, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0076, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0077, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0078, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0079, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0080, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0081, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0082, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0083, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0084, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0085, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0086, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0087, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0088, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0089, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0090, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0091, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0092, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0093, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0094, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0095, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0096, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0097, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0098, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0099, iter = 8, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0100, iter = 8, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.67, 0.45), alpha = 0.0001, iter = 10000, valor = 0.11
-ans = x0 = (0.00, 0.00), x1 = (0.82, 0.68), alpha = 0.0002, iter = 10000, valor = 0.03
-ans = x0 = (0.00, 0.00), x1 = (0.89, 0.80), alpha = 0.0003, iter = 10000, valor = 0.01
-ans = x0 = (0.00, 0.00), x1 = (0.93, 0.87), alpha = 0.0004, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.96, 0.91), alpha = 0.0005, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.97, 0.94), alpha = 0.0006, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.98, 0.96), alpha = 0.0007, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.99, 0.97), alpha = 0.0008, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.99, 0.98), alpha = 0.0009, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.99, 0.99), alpha = 0.0010, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 0.99), alpha = 0.0011, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 0.99), alpha = 0.0012, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0013, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0014, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0015, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0016, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0017, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0018, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0019, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0020, iter = 9887, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.98, 0.93), alpha = 0.0021, iter = 10000, valor = 0.04
-ans = x0 = (0.00, 0.00), x1 = (0.95, 0.88), alpha = 0.0022, iter = 10000, valor = 0.07
-ans = x0 = (0.00, 0.00), x1 = (0.93, 0.83), alpha = 0.0023, iter = 10000, valor = 0.11
-ans = x0 = (0.00, 0.00), x1 = (0.90, 0.78), alpha = 0.0024, iter = 10000, valor = 0.14
-ans = x0 = (0.00, 0.00), x1 = (0.88, 0.74), alpha = 0.0025, iter = 10000, valor = 0.17
-ans = x0 = (0.00, 0.00), x1 = (0.82, 0.72), alpha = 0.0026, iter = 10000, valor = 0.21
-ans = x0 = (0.00, 0.00), x1 = (0.80, 0.69), alpha = 0.0027, iter = 10000, valor = 0.24
-ans = x0 = (0.00, 0.00), x1 = (0.82, 0.63), alpha = 0.0028, iter = 10000, valor = 0.25
-ans = x0 = (0.00, 0.00), x1 = (0.80, 0.60), alpha = 0.0029, iter = 10000, valor = 0.28
-ans = x0 = (0.00, 0.00), x1 = (0.79, 0.57), alpha = 0.0030, iter = 10000, valor = 0.30
-ans = x0 = (0.00, 0.00), x1 = (0.77, 0.54), alpha = 0.0031, iter = 10000, valor = 0.33
-ans = x0 = (0.00, 0.00), x1 = (0.75, 0.51), alpha = 0.0032, iter = 10000, valor = 0.35
-ans = x0 = (0.00, 0.00), x1 = (0.69, 0.52), alpha = 0.0033, iter = 10000, valor = 0.41
-ans = x0 = (0.00, 0.00), x1 = (0.67, 0.50), alpha = 0.0034, iter = 10000, valor = 0.43
-ans = x0 = (0.00, 0.00), x1 = (0.71, 0.44), alpha = 0.0035, iter = 10000, valor = 0.42
-ans = x0 = (0.00, 0.00), x1 = (0.69, 0.42), alpha = 0.0036, iter = 10000, valor = 0.44
-ans = x0 = (0.00, 0.00), x1 = (0.62, 0.45), alpha = 0.0037, iter = 10000, valor = 0.50
-ans = x0 = (0.00, 0.00), x1 = (0.67, 0.38), alpha = 0.0038, iter = 10000, valor = 0.48
-ans = x0 = (0.00, 0.00), x1 = (0.65, 0.37), alpha = 0.0039, iter = 10000, valor = 0.50
-ans = x0 = (0.00, 0.00), x1 = (0.58, 0.40), alpha = 0.0040, iter = 10000, valor = 0.57
-ans = x0 = (0.00, 0.00), x1 = (0.63, 0.33), alpha = 0.0041, iter = 10000, valor = 0.54
-ans = x0 = (0.00, 0.00), x1 = (0.55, 0.37), alpha = 0.0042, iter = 10000, valor = 0.62
-ans = x0 = (0.00, 0.00), x1 = (0.61, 0.30), alpha = 0.0043, iter = 10000, valor = 0.58
-ans = x0 = (0.00, 0.00), x1 = (0.53, 0.35), alpha = 0.0044, iter = 10000, valor = 0.66
-ans = x0 = (0.00, 0.00), x1 = (0.52, 0.34), alpha = 0.0045, iter = 10000, valor = 0.68
-ans = x0 = (0.00, 0.00), x1 = (0.57, 0.26), alpha = 0.0046, iter = 10000, valor = 0.64
-ans = x0 = (0.00, 0.00), x1 = (0.56, 0.25), alpha = 0.0047, iter = 10000, valor = 0.66
-ans = x0 = (0.00, 0.00), x1 = (0.48, 0.30), alpha = 0.0048, iter = 10000, valor = 0.75
-ans = x0 = (0.00, 0.00), x1 = (0.47, 0.29), alpha = 0.0049, iter = 10000, valor = 0.77
-ans = x0 = (0.00, 0.00), x1 = (0.46, 0.29), alpha = 0.0050, iter = 10000, valor = 0.79
-ans = x0 = (0.00, 0.00), x1 = (0.45, 0.28), alpha = 0.0051, iter = 10000, valor = 0.81
-ans = x0 = (0.00, 0.00), x1 = (0.44, 0.27), alpha = 0.0052, iter = 10000, valor = 0.83
-ans = x0 = (0.00, 0.00), x1 = (0.51, 0.18), alpha = 0.0053, iter = 10000, valor = 0.77
-ans = x0 = (0.00, 0.00), x1 = (0.50, 0.17), alpha = 0.0054, iter = 10000, valor = 0.79
-ans = x0 = (0.00, 0.00), x1 = (0.41, 0.25), alpha = 0.0055, iter = 10000, valor = 0.89
-ans = x0 = (0.00, 0.00), x1 = (0.40, 0.24), alpha = 0.0056, iter = 10000, valor = 0.91
-ans = x0 = (0.00, 0.00), x1 = (0.47, 0.15), alpha = 0.0057, iter = 10000, valor = 0.85
-ans = x0 = (0.00, 0.00), x1 = (0.46, 0.14), alpha = 0.0058, iter = 10000, valor = 0.87
-ans = x0 = (0.00, 0.00), x1 = (0.38, 0.22), alpha = 0.0059, iter = 10000, valor = 0.98
-ans = x0 = (0.00, 0.00), x1 = (0.37, 0.21), alpha = 0.0060, iter = 10000, valor = 1.00
-ans = x0 = (0.00, 0.00), x1 = (0.44, 0.11), alpha = 0.0061, iter = 10000, valor = 0.93
-ans = x0 = (0.00, 0.00), x1 = (0.35, 0.20), alpha = 0.0062, iter = 10000, valor = 1.05
-ans = x0 = (0.00, 0.00), x1 = (0.42, 0.10), alpha = 0.0063, iter = 10000, valor = 0.97
-ans = x0 = (0.00, 0.00), x1 = (0.33, 0.19), alpha = 0.0064, iter = 10000, valor = 1.09
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0065, iter = 129, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0066, iter = 123, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.31, 0.18), alpha = 0.0067, iter = 10000, valor = 1.16
-ans = x0 = (0.00, 0.00), x1 = (0.30, 0.18), alpha = 0.0068, iter = 10000, valor = 1.19
-ans = x0 = (0.00, 0.00), x1 = (0.29, 0.17), alpha = 0.0069, iter = 10000, valor = 1.22
-ans = x0 = (0.00, 0.00), x1 = (0.29, 0.17), alpha = 0.0070, iter = 10000, valor = 1.24
-ans = x0 = (0.00, 0.00), x1 = (0.28, 0.16), alpha = 0.0071, iter = 10000, valor = 1.27
-ans = x0 = (0.00, 0.00), x1 = (0.27, 0.16), alpha = 0.0072, iter = 10000, valor = 1.30
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0073, iter = 91, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.26, 0.15), alpha = 0.0074, iter = 10000, valor = 1.35
-ans = x0 = (0.00, 0.00), x1 = (0.25, 0.15), alpha = 0.0075, iter = 10000, valor = 1.38
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0076, iter = 81, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.23, 0.15), alpha = 0.0077, iter = 10000, valor = 1.45
-ans = x0 = (0.00, 0.00), x1 = (0.23, 0.14), alpha = 0.0078, iter = 10000, valor = 1.48
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0079, iter = 73, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0080, iter = 69, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0081, iter = 71, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.19, 0.14), alpha = 0.0082, iter = 10000, valor = 1.64
-ans = x0 = (0.00, 0.00), x1 = (Inf, Inf), alpha = 0.0083, iter = 64, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0084, iter = 60, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0085, iter = 58, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (Inf, Inf), alpha = 0.0086, iter = 58, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.16, 0.13), alpha = 0.0087, iter = 10000, valor = 1.91
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0088, iter = 54, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0089, iter = 52, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.13, 0.13), alpha = 0.0090, iter = 10000, valor = 2.14
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0091, iter = 50, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.11, 0.14), alpha = 0.0092, iter = 10000, valor = 2.35
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0093, iter = 47, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (0.09, 0.14), alpha = 0.0094, iter = 10000, valor = 2.65
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0095, iter = 45, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0096, iter = 45, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (NaN, Inf), alpha = 0.0097, iter = 48, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0098, iter = 50, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0099, iter = 48, valor = NaN
-ans = x0 = (0.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0100, iter = 42, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (2.33, 5.44), alpha = 0.0001, iter = 10000, valor = 1.78
-ans = x0 = (5.00, 6.00), x1 = (-2.00, 4.02), alpha = 0.0002, iter = 10000, valor = 9.03
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0003, iter = 9, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0004, iter = 9, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (-Inf, Inf), alpha = 0.0005, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (-Inf, Inf), alpha = 0.0006, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (-Inf, Inf), alpha = 0.0007, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (-Inf, Inf), alpha = 0.0008, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (-Inf, Inf), alpha = 0.0009, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0010, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0011, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0012, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0013, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0014, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0015, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0016, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0017, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0018, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0019, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0020, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0021, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (NaN, Inf), alpha = 0.0022, iter = 8, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0023, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0024, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0025, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0026, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0027, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0028, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0029, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0030, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0031, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0032, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0033, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0034, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0035, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0036, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0037, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0038, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0039, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0040, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0041, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0042, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0043, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0044, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0045, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0046, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0047, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0048, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0049, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0050, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0051, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0052, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0053, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0054, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0055, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0056, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0057, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0058, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0059, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0060, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0061, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0062, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0063, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0064, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0065, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0066, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0067, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0068, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0069, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0070, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0071, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0072, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0073, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0074, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0075, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0076, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0077, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0078, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0079, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0080, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0081, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0082, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0083, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0084, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0085, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0086, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0087, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0088, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0089, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0090, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0091, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0092, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0093, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0094, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0095, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0096, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0097, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0098, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0099, iter = 7, valor = NaN
-ans = x0 = (5.00, 6.00), x1 = (Inf, Inf), alpha = 0.0100, iter = 7, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (0.67, 0.45), alpha = 0.0001, iter = 10000, valor = 0.11
-ans = x0 = (-1.00, -4.00), x1 = (0.82, 0.67), alpha = 0.0002, iter = 10000, valor = 0.03
-ans = x0 = (-1.00, -4.00), x1 = (0.89, 0.79), alpha = 0.0003, iter = 10000, valor = 0.01
-ans = x0 = (-1.00, -4.00), x1 = (0.93, 0.87), alpha = 0.0004, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.96, 0.91), alpha = 0.0005, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.97, 0.94), alpha = 0.0006, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.98, 0.96), alpha = 0.0007, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.99, 0.97), alpha = 0.0008, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.99, 0.98), alpha = 0.0009, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.99, 0.99), alpha = 0.0010, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 0.99), alpha = 0.0011, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0012, iter = 12, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0013, iter = 10, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0014, iter = 10, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (-Inf, Inf), alpha = 0.0015, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (-Inf, Inf), alpha = 0.0016, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (-Inf, Inf), alpha = 0.0017, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (-Inf, Inf), alpha = 0.0018, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (-Inf, Inf), alpha = 0.0019, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0020, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0021, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0022, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0023, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0024, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0025, iter = 9, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0026, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0027, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0028, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0029, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0030, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0031, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0032, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0033, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0034, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0035, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0036, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0037, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0038, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0039, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0040, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0041, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0042, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0043, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0044, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0045, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0046, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0047, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0048, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0049, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0050, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0051, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0052, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0053, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0054, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0055, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0056, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0057, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0058, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0059, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0060, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0061, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (Inf, Inf), alpha = 0.0062, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0063, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0064, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0065, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0066, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0067, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0068, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0069, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0070, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0071, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0072, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0073, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0074, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0075, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0076, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0077, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0078, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0079, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0080, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0081, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0082, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0083, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0084, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0085, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0086, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0087, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0088, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0089, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0090, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0091, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0092, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0093, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0094, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0095, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0096, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0097, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0098, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0099, iter = 8, valor = NaN
-ans = x0 = (-1.00, -4.00), x1 = (NaN, Inf), alpha = 0.0100, iter = 8, valor = NaN
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0020, iter = 9968, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (0.88, 0.80), alpha = 0.0024, iter = 10000, valor = 0.14
+ans = x0 = (-1.00, 0.00), x1 = (0.78, 0.66), alpha = 0.0028, iter = 10000, valor = 0.26
+ans = x0 = (-1.00, 0.00), x1 = (0.71, 0.56), alpha = 0.0032, iter = 10000, valor = 0.37
+ans = x0 = (-1.00, 0.00), x1 = (0.64, 0.47), alpha = 0.0036, iter = 10000, valor = 0.47
+ans = x0 = (-1.00, 0.00), x1 = (0.65, 0.36), alpha = 0.0039, iter = 10000, valor = 0.51
+ans = x0 = (-1.00, 0.00), x1 = (0.60, 0.30), alpha = 0.0043, iter = 10000, valor = 0.59
+ans = x0 = (-1.00, 0.00), x1 = (0.56, 0.25), alpha = 0.0047, iter = 10000, valor = 0.66
+ans = x0 = (-1.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0051, iter = 11, valor = NaN
+ans = x0 = (-1.00, 0.00), x1 = (0.49, 0.16), alpha = 0.0055, iter = 10000, valor = 0.81
 ans = 
 Empieza el segundo
-ans = x0 = (2.50, 3.50), x1 = (0.78, 0.60), alpha = 0.1000, iter = 10000, valor = 0.06
-ans = x0 = (2.50, 3.50), x1 = (0.90, 0.81), alpha = 0.1447, iter = 10000, valor = 0.01
-ans = x0 = (2.50, 3.50), x1 = (1.02, 1.05), alpha = 0.1895, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (5.07, 22.89), alpha = 0.2342, iter = 10000, valor = 777.98
-ans = x0 = (2.50, 3.50), x1 = (0.42, 0.16), alpha = 0.2789, iter = 10000, valor = 0.37
-ans = x0 = (2.50, 3.50), x1 = (-53.33, 2843.49), alpha = 0.3237, iter = 10000, valor = 2959.99
-ans = x0 = (2.50, 3.50), x1 = (1.02, 1.04), alpha = 0.3684, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.04, 1.07), alpha = 0.4132, iter = 10000, valor = 0.01
-ans = x0 = (2.50, 3.50), x1 = (3.49, 12.14), alpha = 0.4579, iter = 10000, valor = 6.42
-ans = x0 = (2.50, 3.50), x1 = (1.03, 1.06), alpha = 0.5026, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.11, 1.23), alpha = 0.5474, iter = 10000, valor = 0.03
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), alpha = 0.5921, iter = 6244, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.73, 2.98), alpha = 0.6368, iter = 10000, valor = 0.58
-ans = x0 = (2.50, 3.50), x1 = (1.04, 1.07), alpha = 0.6816, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (0.98, 0.96), alpha = 0.7263, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (0.25, -0.34), alpha = 0.7711, iter = 10000, valor = 17.10
-ans = x0 = (2.50, 3.50), x1 = (1.02, 1.04), alpha = 0.8158, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.48, 2.16), alpha = 0.8605, iter = 10000, valor = 0.30
-ans = x0 = (2.50, 3.50), x1 = (1.13, 1.25), alpha = 0.9053, iter = 10000, valor = 0.08
-ans = x0 = (2.50, 3.50), x1 = (2.61, 5.99), alpha = 0.9500, iter = 10000, valor = 71.77
-ans = x0 = (0.00, 0.00), x1 = (1.01, 1.02), alpha = 0.1000, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (-0.05, -0.02), alpha = 0.1447, iter = 10000, valor = 1.15
-ans = x0 = (0.00, 0.00), x1 = (0.93, 0.85), alpha = 0.1895, iter = 10000, valor = 0.01
-ans = x0 = (0.00, 0.00), x1 = (1.01, 0.99), alpha = 0.2342, iter = 10000, valor = 0.09
-ans = x0 = (0.00, 0.00), x1 = (1.13, 1.28), alpha = 0.2789, iter = 10000, valor = 0.03
-ans = x0 = (0.00, 0.00), x1 = (1.91, 2.75), alpha = 0.3237, iter = 10000, valor = 83.65
-ans = x0 = (0.00, 0.00), x1 = (0.96, 0.91), alpha = 0.3684, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.06, 1.12), alpha = 0.4132, iter = 10000, valor = 0.03
-ans = x0 = (0.00, 0.00), x1 = (0.99, 0.98), alpha = 0.4579, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (-22.20, 492.48), alpha = 0.5026, iter = 10000, valor = 541.81
-ans = x0 = (0.00, 0.00), x1 = (92.66, 8584.54), alpha = 0.5474, iter = 10000, valor = 8424.79
-ans = x0 = (0.00, 0.00), x1 = (1.10, 1.20), alpha = 0.5921, iter = 10000, valor = 0.03
-ans = x0 = (0.00, 0.00), x1 = (1.02, 1.03), alpha = 0.6368, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (2.48, 5.45), alpha = 0.6816, iter = 10000, valor = 50.29
-ans = x0 = (0.00, 0.00), x1 = (1.06, 1.12), alpha = 0.7263, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.7711, iter = 913, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), alpha = 0.8158, iter = 87, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (0.99, 0.97), alpha = 0.8605, iter = 10000, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (-0.35, 0.11), alpha = 0.9053, iter = 10000, valor = 1.87
-ans = x0 = (0.00, 0.00), x1 = (-29.63, 877.75), alpha = 0.9500, iter = 10000, valor = 938.60
-ans = x0 = (5.00, 6.00), x1 = (-35.59, 1266.60), alpha = 0.1000, iter = 10000, valor = 1341.31
-ans = x0 = (5.00, 6.00), x1 = (0.42, 0.16), alpha = 0.1447, iter = 10000, valor = 0.36
-ans = x0 = (5.00, 6.00), x1 = (0.94, 0.89), alpha = 0.1895, iter = 10000, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (0.91, 0.81), alpha = 0.2342, iter = 10000, valor = 0.02
-ans = x0 = (5.00, 6.00), x1 = (6.80, 42.90), alpha = 0.2789, iter = 10000, valor = 1136.73
-ans = x0 = (5.00, 6.00), x1 = (1.01, 1.02), alpha = 0.3237, iter = 10000, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (0.72, 0.50), alpha = 0.3684, iter = 10000, valor = 0.10
-ans = x0 = (5.00, 6.00), x1 = (0.20, -0.12), alpha = 0.4132, iter = 10000, valor = 3.18
-ans = x0 = (5.00, 6.00), x1 = (0.57, 0.31), alpha = 0.4579, iter = 10000, valor = 0.22
-ans = x0 = (5.00, 6.00), x1 = (0.24, -0.02), alpha = 0.5026, iter = 10000, valor = 1.19
-ans = x0 = (5.00, 6.00), x1 = (0.69, 0.36), alpha = 0.5474, iter = 10000, valor = 1.32
-ans = x0 = (5.00, 6.00), x1 = (0.96, 0.93), alpha = 0.5921, iter = 10000, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (0.54, 0.28), alpha = 0.6368, iter = 10000, valor = 0.23
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), alpha = 0.6816, iter = 10000, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (3.56, 12.61), alpha = 0.7263, iter = 10000, valor = 7.52
-ans = x0 = (5.00, 6.00), x1 = (0.92, 0.83), alpha = 0.7711, iter = 10000, valor = 0.01
-ans = x0 = (5.00, 6.00), x1 = (0.99, 0.99), alpha = 0.8158, iter = 10000, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (-16.62, 275.43), alpha = 0.8605, iter = 10000, valor = 371.32
-ans = x0 = (5.00, 6.00), x1 = (13.49, 182.04), alpha = 0.9053, iter = 10000, valor = 156.55
-ans = x0 = (5.00, 6.00), x1 = (-2.89, 8.21), alpha = 0.9500, iter = 10000, valor = 16.49
-ans = x0 = (-1.00, -4.00), x1 = (1.05, 1.10), alpha = 0.1000, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.01, 1.02), alpha = 0.1447, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.18, 1.38), alpha = 0.1895, iter = 10000, valor = 0.04
-ans = x0 = (-1.00, -4.00), x1 = (1.03, 1.05), alpha = 0.2342, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 0.99), alpha = 0.2789, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (0.96, 0.92), alpha = 0.3237, iter = 10000, valor = 0.01
-ans = x0 = (-1.00, -4.00), x1 = (1.04, 1.07), alpha = 0.3684, iter = 10000, valor = 0.01
-ans = x0 = (-1.00, -4.00), x1 = (1.01, 1.02), alpha = 0.4132, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), alpha = 0.4579, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.14, 1.28), alpha = 0.5026, iter = 10000, valor = 0.03
-ans = x0 = (-1.00, -4.00), x1 = (2.90, 8.38), alpha = 0.5474, iter = 10000, valor = 3.79
-ans = x0 = (-1.00, -4.00), x1 = (1195.60, 1429455.28), alpha = 0.5921, iter = 10000, valor = 1427834.48
-ans = x0 = (-1.00, -4.00), x1 = (1.90, 3.57), alpha = 0.6368, iter = 10000, valor = 0.86
-ans = x0 = (-1.00, -4.00), x1 = (1.02, 1.03), alpha = 0.6816, iter = 10000, valor = 0.01
-ans = x0 = (-1.00, -4.00), x1 = (1.29, 1.62), alpha = 0.7263, iter = 10000, valor = 0.19
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), alpha = 0.7711, iter = 8607, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (-1.86, 2.02), alpha = 0.8158, iter = 10000, valor = 216.56
-ans = x0 = (-1.00, -4.00), x1 = (1.14, 1.30), alpha = 0.8605, iter = 10000, valor = 0.03
-ans = x0 = (-1.00, -4.00), x1 = (0.04, -0.01), alpha = 0.9053, iter = 10000, valor = 0.95
-ans = x0 = (-1.00, -4.00), x1 = (-13.40, 179.01), alpha = 0.9500, iter = 10000, valor = 234.51
+ans = x0 = (2.50, 3.50), x1 = (3.48, 11.94), alpha = 0.0100, iter = 10000, valor = 8.38
+ans = x0 = (2.50, 3.50), x1 = (0.86, 0.74), alpha = 0.0982, iter = 10000, valor = 0.03
+ans = x0 = (2.50, 3.50), x1 = (1.04, 1.07), alpha = 0.1864, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.22, 1.43), alpha = 0.2745, iter = 10000, valor = 0.30
+ans = x0 = (2.50, 3.50), x1 = (1.18, 1.38), alpha = 0.3627, iter = 10000, valor = 0.04
+ans = x0 = (2.50, 3.50), x1 = (0.95, 0.89), alpha = 0.4509, iter = 10000, valor = 0.01
+ans = x0 = (2.50, 3.50), x1 = (2.26, 4.76), alpha = 0.5391, iter = 10000, valor = 12.68
+ans = x0 = (2.50, 3.50), x1 = (50.59, 2558.77), alpha = 0.6273, iter = 10000, valor = 2472.66
+ans = x0 = (2.50, 3.50), x1 = (1.40, 1.75), alpha = 0.7155, iter = 10000, valor = 4.73
+ans = x0 = (2.50, 3.50), x1 = (5.50, 30.03), alpha = 0.8036, iter = 10000, valor = 23.44
+ans = x0 = (2.50, 3.50), x1 = (0.68, 0.43), alpha = 0.8918, iter = 10000, valor = 0.23
+ans = x0 = (2.50, 3.50), x1 = (34.41, 1183.79), alpha = 0.9800, iter = 10000, valor = 1148.27
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 0.99), alpha = 0.0100, iter = 10000, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (20.86, 435.14), alpha = 0.1422, iter = 10000, valor = 395.88
+ans = x0 = (-1.00, 0.00), x1 = (1.05, 1.10), alpha = 0.2744, iter = 10000, valor = 0.01
+ans = x0 = (-1.00, 0.00), x1 = (1.07, 1.14), alpha = 0.4067, iter = 10000, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.12, 1.25), alpha = 0.5389, iter = 10000, valor = 0.02
+ans = x0 = (-1.00, 0.00), x1 = (0.93, 0.84), alpha = 0.6711, iter = 10000, valor = 0.05
+ans = x0 = (-1.00, 0.00), x1 = (-10.63, 112.92), alpha = 0.8033, iter = 10000, valor = 136.03
+ans = x0 = (-1.00, 0.00), x1 = (6.34, 39.69), alpha = 0.9356, iter = 10000, valor = 60.90
+ans = x0 = (-1.00, 0.00), x1 = (-1074417.47, 1154372888868.30), alpha = 1.0678, iter = 10000, valor = 1154842540277.31
+ans = x0 = (-1.00, 0.00), x1 = (24579.14, 604133898.00), alpha = 1.2000, iter = 10000, valor = 604118219.94
 ans = 
 Empieza el tercero
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.20, iter = 112, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.23, iter = 97, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.27, iter = 85, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.30, iter = 76, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.33, iter = 68, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.37, iter = 62, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.40, iter = 57, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.43, iter = 53, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.47, iter = 49, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.50, iter = 46, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.20, iter = 116, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.10, iter = 202, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.23, iter = 91, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.37, iter = 59, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.50, iter = 43, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.63, iter = 34, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.77, iter = 27, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.90, iter = 23, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 1.03, iter = 16, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 1.17, iter = 45, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 1.30, iter = 324, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.10, iter = 227, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.23, iter = 100, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.27, iter = 87, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.30, iter = 78, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.33, iter = 70, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.37, iter = 64, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.40, iter = 59, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.43, iter = 54, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.47, iter = 50, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.50, iter = 47, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.20, iter = 119, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.23, iter = 103, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.27, iter = 90, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.30, iter = 80, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.33, iter = 72, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.37, iter = 66, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.40, iter = 61, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.43, iter = 56, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.47, iter = 52, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.50, iter = 48, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.20, iter = 124, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.23, iter = 106, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.27, iter = 93, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.30, iter = 83, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.33, iter = 75, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.37, iter = 68, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.40, iter = 62, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.43, iter = 58, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.47, iter = 54, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.50, iter = 50, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.20, iter = 128, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.23, iter = 110, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.27, iter = 96, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.30, iter = 86, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.33, iter = 77, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.37, iter = 70, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.40, iter = 64, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.43, iter = 60, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.47, iter = 55, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.50, iter = 52, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.20, iter = 132, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.63, iter = 37, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.77, iter = 30, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.90, iter = 25, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 1.03, iter = 20, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 1.17, iter = 34, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.23, alpha = 1.30, iter = 162, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.10, iter = 261, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.23, iter = 113, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.27, iter = 99, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.30, iter = 88, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.33, iter = 80, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.37, iter = 72, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.40, iter = 66, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.43, iter = 61, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.47, iter = 57, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.50, iter = 53, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.20, iter = 136, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.23, iter = 117, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.27, iter = 102, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.30, iter = 91, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.33, iter = 82, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.37, iter = 75, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.40, iter = 69, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.43, iter = 63, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.47, iter = 59, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.50, iter = 55, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.20, iter = 140, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.23, iter = 121, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.27, iter = 106, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.30, iter = 94, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.33, iter = 85, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.37, iter = 77, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.40, iter = 71, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.43, iter = 65, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.47, iter = 61, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.50, iter = 56, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.20, iter = 145, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.23, iter = 124, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.27, iter = 109, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.30, iter = 97, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.33, iter = 87, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.37, iter = 79, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.40, iter = 73, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.43, iter = 67, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.47, iter = 62, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.50, iter = 58, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.20, iter = 149, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.63, iter = 42, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.77, iter = 34, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.90, iter = 29, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.03, iter = 26, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.17, iter = 85, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.30, iter = 163, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.10, iter = 297, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.23, iter = 128, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.27, iter = 112, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.30, iter = 100, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.33, iter = 90, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 82, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.40, iter = 75, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.43, iter = 69, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.47, iter = 64, valor = 0.00
 ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.50, iter = 60, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.20, iter = 79, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.23, iter = 69, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.27, iter = 61, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.30, iter = 54, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.33, iter = 49, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.37, iter = 45, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.40, iter = 41, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.43, iter = 38, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.47, iter = 35, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.50, iter = 32, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.20, iter = 82, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.23, iter = 71, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.27, iter = 63, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.30, iter = 56, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.33, iter = 51, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.37, iter = 46, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.40, iter = 42, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.43, iter = 39, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.47, iter = 36, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.50, iter = 33, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.20, iter = 85, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.23, iter = 74, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.27, iter = 65, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.30, iter = 58, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.33, iter = 52, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.37, iter = 48, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.40, iter = 44, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.43, iter = 40, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.47, iter = 37, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.50, iter = 35, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.20, iter = 88, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.23, iter = 76, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.27, iter = 67, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.30, iter = 60, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.33, iter = 54, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.37, iter = 49, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.40, iter = 45, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.43, iter = 42, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.47, iter = 38, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.50, iter = 36, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.20, iter = 91, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.23, iter = 79, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.27, iter = 69, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.30, iter = 62, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.33, iter = 56, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.37, iter = 51, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.40, iter = 47, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.43, iter = 43, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.47, iter = 40, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.50, iter = 37, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.20, iter = 94, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.23, iter = 81, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.27, iter = 71, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.30, iter = 64, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.33, iter = 58, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.37, iter = 52, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.40, iter = 48, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.43, iter = 44, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.47, iter = 41, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.50, iter = 38, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.20, iter = 97, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.23, iter = 84, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.27, iter = 74, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.30, iter = 66, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.33, iter = 59, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.37, iter = 54, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.40, iter = 50, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.43, iter = 46, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.47, iter = 42, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.50, iter = 39, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.20, iter = 100, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.23, iter = 86, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.27, iter = 76, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.30, iter = 68, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.33, iter = 61, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.37, iter = 56, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.40, iter = 51, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.43, iter = 47, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.47, iter = 44, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.50, iter = 41, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.20, iter = 103, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.23, iter = 89, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.27, iter = 78, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.30, iter = 70, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.33, iter = 63, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.37, iter = 57, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.40, iter = 53, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.43, iter = 48, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.47, iter = 45, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.50, iter = 42, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.20, iter = 106, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.23, iter = 92, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.27, iter = 81, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.30, iter = 72, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.33, iter = 65, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 59, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.40, iter = 54, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.43, iter = 50, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.47, iter = 46, valor = 0.00
-ans = x0 = (0.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.50, iter = 43, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.20, iter = 162, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.23, iter = 140, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.27, iter = 124, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.30, iter = 111, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.33, iter = 101, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.37, iter = 93, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.40, iter = 85, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.43, iter = 79, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.47, iter = 74, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.50, iter = 69, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.20, iter = 168, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.23, iter = 145, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.27, iter = 128, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.30, iter = 115, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.33, iter = 104, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.37, iter = 96, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.40, iter = 88, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.43, iter = 82, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.47, iter = 76, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.50, iter = 72, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.20, iter = 174, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.23, iter = 151, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.27, iter = 133, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.30, iter = 119, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.33, iter = 108, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.37, iter = 99, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.40, iter = 91, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.43, iter = 85, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.47, iter = 79, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.50, iter = 74, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.20, iter = 181, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.23, iter = 156, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.27, iter = 138, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.30, iter = 123, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.33, iter = 112, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.37, iter = 102, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.40, iter = 94, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.43, iter = 87, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.47, iter = 81, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.50, iter = 76, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.20, iter = 188, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.23, iter = 162, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.27, iter = 143, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.30, iter = 128, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.33, iter = 116, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.37, iter = 106, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.40, iter = 97, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.43, iter = 90, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.47, iter = 84, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.50, iter = 79, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.20, iter = 195, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.23, iter = 168, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.27, iter = 148, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.30, iter = 133, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.33, iter = 120, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.37, iter = 110, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.40, iter = 101, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.43, iter = 93, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.47, iter = 87, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.50, iter = 82, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.20, iter = 202, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.23, iter = 174, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.27, iter = 154, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.30, iter = 137, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.33, iter = 124, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.37, iter = 113, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.40, iter = 104, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.43, iter = 97, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.47, iter = 90, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.50, iter = 84, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.20, iter = 210, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.23, iter = 181, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.27, iter = 159, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.30, iter = 142, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.33, iter = 128, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.37, iter = 117, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.40, iter = 108, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.43, iter = 100, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.47, iter = 93, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.50, iter = 87, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.20, iter = 217, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.23, iter = 187, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.27, iter = 165, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.30, iter = 147, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.33, iter = 133, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.37, iter = 121, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.40, iter = 111, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.43, iter = 103, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.47, iter = 96, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.50, iter = 90, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.20, iter = 225, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.23, iter = 194, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.27, iter = 170, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.30, iter = 152, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.33, iter = 137, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 125, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.40, iter = 115, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.43, iter = 107, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.47, iter = 99, valor = 0.00
-ans = x0 = (5.00, 6.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.50, iter = 93, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.20, iter = 117, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.23, iter = 101, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.27, iter = 89, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.30, iter = 80, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.33, iter = 72, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.37, iter = 66, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.40, iter = 61, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.43, iter = 56, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.47, iter = 52, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.50, iter = 49, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.20, iter = 120, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.23, iter = 104, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.27, iter = 91, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.30, iter = 82, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.33, iter = 74, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.37, iter = 67, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.40, iter = 62, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.43, iter = 57, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.47, iter = 53, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.50, iter = 50, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.20, iter = 123, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.23, iter = 106, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.27, iter = 93, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.30, iter = 84, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.33, iter = 75, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.37, iter = 69, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.40, iter = 63, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.43, iter = 59, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.47, iter = 54, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.50, iter = 51, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.20, iter = 126, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.23, iter = 109, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.27, iter = 96, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.30, iter = 85, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.33, iter = 77, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.37, iter = 70, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.40, iter = 65, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.43, iter = 60, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.47, iter = 56, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.50, iter = 52, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.20, iter = 129, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.23, iter = 111, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.27, iter = 98, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.30, iter = 87, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.33, iter = 79, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.37, iter = 72, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.40, iter = 66, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.43, iter = 61, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.47, iter = 57, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.33, alpha = 0.50, iter = 53, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.20, iter = 132, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.23, iter = 114, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.27, iter = 100, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.30, iter = 90, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.33, iter = 81, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.37, iter = 74, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.40, iter = 68, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.43, iter = 63, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.47, iter = 58, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.50, iter = 54, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.20, iter = 135, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.23, iter = 117, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.27, iter = 103, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.30, iter = 92, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.33, iter = 83, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.37, iter = 75, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.40, iter = 69, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.43, iter = 64, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.47, iter = 60, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.50, iter = 56, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.20, iter = 138, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.23, iter = 119, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.27, iter = 105, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.30, iter = 94, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.33, iter = 85, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.37, iter = 77, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.40, iter = 71, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.43, iter = 65, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.47, iter = 61, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.43, alpha = 0.50, iter = 57, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.20, iter = 142, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.23, iter = 122, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.27, iter = 107, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.30, iter = 96, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.33, iter = 86, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.37, iter = 79, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.40, iter = 72, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.43, iter = 67, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.47, iter = 62, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.50, iter = 58, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.20, iter = 145, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.23, iter = 125, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.27, iter = 110, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.30, iter = 98, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.33, iter = 88, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 80, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.40, iter = 74, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.43, iter = 68, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.47, iter = 63, valor = 0.00
-ans = x0 = (-1.00, -4.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.50, iter = 59, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.63, iter = 47, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.77, iter = 38, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.90, iter = 32, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 1.03, iter = 30, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 1.17, iter = 21, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 1.30, iter = 29, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.10, iter = 334, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.23, iter = 144, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.37, iter = 91, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.50, iter = 67, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.63, iter = 52, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.77, iter = 43, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.90, iter = 36, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 1.03, iter = 33, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 1.17, iter = 28, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 1.30, iter = 25, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.10, iter = 372, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.23, iter = 160, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.37, iter = 101, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.50, iter = 74, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.63, iter = 58, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.77, iter = 48, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.90, iter = 40, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 1.03, iter = 38, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 1.17, iter = 31, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 1.30, iter = 45, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.10, iter = 412, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.23, iter = 176, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.37, iter = 111, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.50, iter = 81, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.63, iter = 64, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.77, iter = 52, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.90, iter = 44, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.03, iter = 43, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.17, iter = 35, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.30, iter = 42, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.10, iter = 451, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.23, iter = 193, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.37, iter = 122, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.50, iter = 89, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.63, iter = 70, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.77, iter = 57, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.90, iter = 48, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 1.03, iter = 54, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 1.17, iter = 38, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.03, alpha = 1.30, iter = 1310, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.10, iter = 491, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.23, iter = 209, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.37, iter = 133, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.50, iter = 97, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.63, iter = 76, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.77, iter = 62, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.90, iter = 52, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.03, iter = 29, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.17, iter = 41, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.30, iter = 27, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.10, iter = 531, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.23, iter = 227, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.37, iter = 143, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.50, iter = 104, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.63, iter = 82, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.77, iter = 67, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.90, iter = 57, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 1.03, iter = 45, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 1.17, iter = 44, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 1.30, iter = 40, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.10, iter = 198, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.23, iter = 91, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.37, iter = 60, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.50, iter = 45, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.63, iter = 35, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.77, iter = 29, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.90, iter = 23, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 1.03, iter = 107, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 1.17, iter = 218, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 1.30, iter = 333, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.10, iter = 218, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.23, iter = 98, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.37, iter = 64, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.50, iter = 48, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.63, iter = 38, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.77, iter = 31, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.90, iter = 25, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 1.03, iter = 27, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 1.17, iter = 38, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 1.30, iter = 79, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.10, iter = 242, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.23, iter = 108, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.37, iter = 70, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.50, iter = 52, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.63, iter = 41, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.77, iter = 34, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.90, iter = 28, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.03, iter = 24, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.17, iter = 27, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.30, iter = 120, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.10, iter = 268, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.23, iter = 119, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 77, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.50, iter = 57, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.63, iter = 45, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.77, iter = 37, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.90, iter = 31, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 1.03, iter = 40, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 1.17, iter = 23, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.50, alpha = 1.30, iter = 298, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.10, iter = 294, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.23, iter = 130, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.37, iter = 84, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.50, iter = 62, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.63, iter = 49, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.77, iter = 41, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.90, iter = 34, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 1.03, iter = 115, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 1.17, iter = 34, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 1.30, iter = 57, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.10, iter = 319, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.23, iter = 140, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.37, iter = 91, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.50, iter = 67, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.63, iter = 53, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.77, iter = 44, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.90, iter = 36, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 1.03, iter = 37, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 1.17, iter = 37, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 1.30, iter = 39, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.10, iter = 345, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.23, iter = 151, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.37, iter = 97, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.50, iter = 72, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.63, iter = 57, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.77, iter = 47, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.90, iter = 39, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.03, iter = 49, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.17, iter = 60, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.30, iter = 34, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.10, iter = 371, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.23, iter = 162, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.37, iter = 104, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.50, iter = 77, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.63, iter = 61, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.77, iter = 50, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.90, iter = 42, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 1.03, iter = 30, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 1.17, iter = 367, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 1.30, iter = 29, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.10, iter = 397, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.23, iter = 173, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.37, iter = 111, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.50, iter = 82, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.63, iter = 65, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.77, iter = 54, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.90, iter = 45, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.03, iter = 496, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.17, iter = 33, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.30, iter = 24, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.10, iter = 423, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.23, iter = 184, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.37, iter = 118, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.50, iter = 87, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.63, iter = 69, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.77, iter = 57, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.90, iter = 48, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 1.03, iter = 102, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 1.17, iter = 34, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.30, alpha = 1.30, iter = 31, valor = 0.00

@@ -156,65 +156,132 @@ Utilizando los tres metodos vistos anteriormente y compare resultados
 
 Los codigos estan en el archivo \texttt{pregunta\_3.m} con un ejemplo de
 los resultados en \texttt{respuesta\_3.txt}. Es claro que el punto
-minimizante de esta funcion corresponde a \((1,1)\), asi que tomamos un
-punto inicial \(x_0 = (2.5, 3.5)\) no tan lejos de este.
+minimizante de esta funcion corresponde a \((1,1)\), asi que tomamos solo
+dos puntos iniciales, \(x_0 = (2.5, 3.5), x_0 = (-1,0) \) ambos no tan
+lejos del minimo para analisar.
 
 \subsection*{Maximo descenso}
 Este corresponde a la primera seccion en el archivo
 \texttt{respuesta\_3.txt}. Para utilizar este necesitamos el gradiente de
-la funcion
+la funcion \(f\)
 \[ \nabla f (x,y) = [-400 x (y - x^2) - 2 (1-x),\ 200 (y-x^2)] \]
-Con esto, los resultados son todos de la forma
+Con esto, para \(x_0 = (2.5, 3.5)\) los resultados son los siguientes
 \begin{verbatim}
-ans = x1 = (Inf, Inf), alpha = X , iter = 7, valor = NaN
+ans = x0 = (2.50, 3.50), x1 = (1.79, 3.20), alpha = 0.0001, iter = 10000, valor = 0.62
+ans = x0 = (2.50, 3.50), x1 = (1.61, 2.60), alpha = 0.0003, iter = 10000, valor = 0.37
+ans = x0 = (2.50, 3.50), x1 = (1.44, 2.07), alpha = 0.0004, iter = 10000, valor = 0.19
+ans = x0 = (2.50, 3.50), x1 = (1.28, 1.63), alpha = 0.0006, iter = 10000, valor = 0.08
+ans = x0 = (2.50, 3.50), x1 = (1.14, 1.29), alpha = 0.0007, iter = 10000, valor = 0.02
+ans = x0 = (2.50, 3.50), x1 = (1.02, 1.05), alpha = 0.0009, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (0.99, 0.98), alpha = 0.0010, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.01, 1.01), alpha = 0.0012, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0013, iter = 11, valor = NaN
+ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0015, iter = 10, valor = NaN
 \end{verbatim}
-con \(X \in [0.1 \dots 1]\). Para cada uno de estos valores este
-metodo no converge. La presencia de NaN como valor y dado que la forma de
-la funcion es una parabola nos da a intuir que este metodo llega a algun
-valor infinito el cual no le permite superar la septima iteracion.
+lo que nos dice que para este punto inicial, los valores de \(\alpha <
+0.001\) hacen que el metodo converga eventualmente, a pesar de llegar a
+nuestro limite (arbitrario) de iteraciones.
+
+Para \(x_0 = (-1,0)\) hacemos el mismo procedimiento, obteniendo asi los
+siguientes valores
+\begin{verbatim}
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0020, iter = 9968, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (0.88, 0.80), alpha = 0.0024, iter = 10000, valor = 0.14
+ans = x0 = (-1.00, 0.00), x1 = (0.78, 0.66), alpha = 0.0028, iter = 10000, valor = 0.26
+ans = x0 = (-1.00, 0.00), x1 = (0.71, 0.56), alpha = 0.0032, iter = 10000, valor = 0.37
+ans = x0 = (-1.00, 0.00), x1 = (0.64, 0.47), alpha = 0.0036, iter = 10000, valor = 0.47
+ans = x0 = (-1.00, 0.00), x1 = (0.65, 0.36), alpha = 0.0039, iter = 10000, valor = 0.51
+ans = x0 = (-1.00, 0.00), x1 = (0.60, 0.30), alpha = 0.0043, iter = 10000, valor = 0.59
+ans = x0 = (-1.00, 0.00), x1 = (0.56, 0.25), alpha = 0.0047, iter = 10000, valor = 0.66
+ans = x0 = (-1.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0051, iter = 11, valor = NaN
+ans = x0 = (-1.00, 0.00), x1 = (0.49, 0.16), alpha = 0.0055, iter = 10000, valor = 0.81
+\end{verbatim}
+notar que tambien utiliza el maximo de iteraciones permitido, sin embargo
+esta relativamente cerca de la solucion \((1,1)\), por lo que diremos que
+para \(\alpha < 0.005\) el metodo de maximo descenso converge.
 
 \subsection*{Metodo de Newton}
-Corresponde a la segunda seccion del archivo. Necesitamos el Hessiano de
-la funcion
+\noindent Corresponde a la segunda seccion del archivo
+\texttt{respuesta\_3.txt}. Necesitamos el Hessiano de la funcion \(f\)
 \[ H (x,y) =
   \begin{pmatrix}
     -400 y - 1200 x^2 + 2 & -400 x \\
     -400 x & 200
   \end{pmatrix}
 \]
-Solo para algunos valores de \(\alpha\) en \([0.4 ,\ 0.5]\) este metodo
-converge
+Notemos que para el valor \(x_0 = (2.5, 3.5)\) se tiene los siguientes resultados
 \begin{verbatim}
-ans = x1 = (-7.57, 57.26), alpha = 0.40, iter = 10000, valor = 74.40
-ans = x1 = (0.96, 0.91), alpha = 0.41, iter = 10000, valor = 0.01
-ans = x1 = (1.00, 1.00), alpha = 0.42, iter = 10000, valor = 0.00
-ans = x1 = (1.07, 1.14), alpha = 0.43, iter = 10000, valor = 0.00
-ans = x1 = (13.09, 171.12), alpha = 0.44, iter = 10000, valor = 147.56
-ans = x1 = (-24.40, 595.08), alpha = 0.46, iter = 10000, valor = 649.03
-ans = x1 = (1.26, 1.58), alpha = 0.47, iter = 10000, valor = 0.09
-ans = x1 = (1.00, 1.00), alpha = 0.48, iter = 10000, valor = 0.00
-ans = x1 = (-1.11, 0.72), alpha = 0.49, iter = 10000, valor = 31.37
-ans = x1 = (4.69, 21.90), alpha = 0.50, iter = 10000, valor = 13.97
+ans =
+Empieza el segundo
+ans = x0 = (2.50, 3.50), x1 = (3.48, 11.94), alpha = 0.0100, iter = 10000, valor = 8.38
+ans = x0 = (2.50, 3.50), x1 = (0.86, 0.74), alpha = 0.0982, iter = 10000, valor = 0.03
+ans = x0 = (2.50, 3.50), x1 = (1.04, 1.07), alpha = 0.1864, iter = 10000, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.22, 1.43), alpha = 0.2745, iter = 10000, valor = 0.30
+ans = x0 = (2.50, 3.50), x1 = (1.18, 1.38), alpha = 0.3627, iter = 10000, valor = 0.04
+ans = x0 = (2.50, 3.50), x1 = (0.95, 0.89), alpha = 0.4509, iter = 10000, valor = 0.01
+ans = x0 = (2.50, 3.50), x1 = (2.26, 4.76), alpha = 0.5391, iter = 10000, valor = 12.68
+ans = x0 = (2.50, 3.50), x1 = (50.59, 2558.77), alpha = 0.6273, iter = 10000, valor = 2472.66
+ans = x0 = (2.50, 3.50), x1 = (1.40, 1.75), alpha = 0.7155, iter = 10000, valor = 4.73
+ans = x0 = (2.50, 3.50), x1 = (5.50, 30.03), alpha = 0.8036, iter = 10000, valor = 23.44
+ans = x0 = (2.50, 3.50), x1 = (0.68, 0.43), alpha = 0.8918, iter = 10000, valor = 0.23
+ans = x0 = (2.50, 3.50), x1 = (34.41, 1183.79), alpha = 0.9800, iter = 10000, valor = 1148.27
 \end{verbatim}
-Fuera de este rango diverge. Notese que siempre llega al maximo de
-iteraciones, si subiera el limite de estas en todas excepto \(3\)
-llegarian a este. Podemos concluir que converge si y solo si se escogen
-valores correctos de \(\alpha\).
+notando que siempre llegamos al maximo de iteraciones para todos los
+\(\alpha\), cuando \(\alpha > 0.92\) nos alejamos de la solucion
+consistentemente y para valores \(\alpha < 0.42\) con nuestro tope de
+iteraciones \(10000\) alcanzamos consistentemente la solucion.
+
+Para \(x_0 = (-1,0)\) se obtiene por otra parte los siguientes resultados
+\begin{verbatim}
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 0.99), alpha = 0.0100, iter = 10000, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (20.86, 435.14), alpha = 0.1422, iter = 10000, valor = 395.88
+ans = x0 = (-1.00, 0.00), x1 = (1.05, 1.10), alpha = 0.2744, iter = 10000, valor = 0.01
+ans = x0 = (-1.00, 0.00), x1 = (1.07, 1.14), alpha = 0.4067, iter = 10000, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.12, 1.25), alpha = 0.5389, iter = 10000, valor = 0.02
+ans = x0 = (-1.00, 0.00), x1 = (0.93, 0.84), alpha = 0.6711, iter = 10000, valor = 0.05
+ans = x0 = (-1.00, 0.00), x1 = (-10.63, 112.92), alpha = 0.8033, iter = 10000, valor = 136.03
+ans = x0 = (-1.00, 0.00), x1 = (6.34, 39.69), alpha = 0.9356, iter = 10000, valor = 60.90
+ans = x0 = (-1.00, 0.00), x1 = (-1074417.47, 1154372888868.30), alpha = ...
+  1.0678, iter = 10000, valor = 1154842540277.31
+ans = x0 = (-1.00, 0.00), x1 = (24579.14, 604133898.00), alpha = ...
+  1.2000, iter = 10000, valor = 604118219.94
+\end{verbatim}
+en todos los casos a costa de mas iteraciones podriamos tener mayor
+precision pero con valores de \(\alpha < 0.75\) para nuestro tope de
+iteraciones se obtienen buenas aproxiamaciones del valor \(x_1\), ademas
+para valores de \(\alpha > 0.9\) consistentemente se diverge de la solucion.
+
+En general este metodo tiene mejores propiedades de convergencia el de
+maximo descenso para este problema. Tiene un rango de valores \(\alpha\)
+mas amplio y mas estable que su alternativa.
 
 \subsection*{Metodo de Levenberg}
 La ultima seccion del archivo. Este metodo para todos los valores de
-\(\alpha \in [0.1,\ 0.5]\) y \(\lambda \in [0.1,\ 0.5]\) probados
-converge al valor \((1,1)\) dicho anteriormente
+\(\alpha \in [0.1,\ 1.3]\) y \(\lambda \in [0.1,\ 1.3]\) probados
+converge al valor \((1,1)\) dicho anteriormente. Solo mostraremos una
+pequeña seccion de esta computacion pues todos los resultados son muy
+homogeneos para ambos valores de \(x_0 = (2.5, 3.5), x_0 = (-1,0)\)
 \begin{verbatim}
-ans = x1 = (1.00, 1.00), lambda = 0.20, alpha = 0.40, iter = 57, valor = 0.00
-ans = x1 = (1.00, 1.00), lambda = 0.27, alpha = 0.30, iter = 80, valor = 0.00
-ans = x1 = (1.00, 1.00), lambda = 0.30, alpha = 0.50, iter = 50, valor = 0.00
-ans = x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.30, iter = 88, valor = 0.00
-ans = x1 = (1.00, 1.00), lambda = 0.40, alpha = 0.43, iter = 63, valor = 0.00
-ans = x1 = (1.00, 1.00), lambda = 0.47, alpha = 0.33, iter = 87, valor = 0.00
-ans = x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.43, iter = 69, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.10, iter = 202, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.10, iter = 261, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 82, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.63, iter = 52, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.90, iter = 40, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.17, iter = 35, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.10, iter = 491, valor = 0.00
+ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.37, iter = 143, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.63, iter = 35, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.90, iter = 25, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.17, iter = 27, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.10, iter = 294, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.37, iter = 91, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.63, iter = 57, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.90, iter = 42, valor = 0.00
+ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.17, iter = 33, valor = 0.00
 \end{verbatim}
 Algo interesante a considerar es la consistencia de la cantidad de
-iteraciones que le toma llegar al optimo. Podemos considerar que con
-mayor certeza este metodo para este problema converge.
+iteraciones que le toma llegar al optimo, siempre tomando a lo mas 300
+iteraciones y siempre llegando al punto minimo de la funcion. Podemos
+considerar que con mayor certeza este metodo para el cual este problema
+converge.
 \end{document}
