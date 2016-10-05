@@ -7,6 +7,7 @@
 \usepackage{amsfonts}
 \usepackage{enumerate}
 \usepackage{polyglossia}
+\usepackage{array}
 
 \setdefaultlanguage{spanish}
 
@@ -37,25 +38,29 @@ comparar con respecto a este que tan lejos de la solucion termino el
 algoritmo. El codigo se encuentra en la primera mitad del archivo
 \texttt{pregunta\_1.m} donde se define \texttt{primer\_ej}
 correspondiente a la funcion anterior. Dado que el punto inicial esta
-dado en el ejemplo en \(x_0 = (2.5, 1.5)\) se respeta este valor como
-partida, ademas utilizamos una toleracian de \(10e4\)
-\begin{verbatim}
-ans = Maximo descenso ejemplo1: x0 = (1.50, 2.50)
-ans = alpha = 0.10, iteraciones =    51, final = (0.00, 0.00)
-ans = alpha = 0.20, iteraciones =    23, final = (0.00, 0.00)
-ans = alpha = 0.30, iteraciones =    13, final = (0.00, 0.00)
-ans = alpha = 0.50, iteraciones =     2, final = (0.00, 0.00)
-ans = alpha = 0.70, iteraciones =    13, final = (0.00, 0.00)
-ans = alpha = 0.75, iteraciones =    17, final = (0.00, 0.00)
-ans = alpha = 0.80, iteraciones =    23, final = (0.00, 0.00)
-ans = alpha = 0.85, iteraciones =    32, final = (-0.00, -0.00)
-ans = alpha = 0.90, iteraciones =    51, final = (0.00, 0.00)
-ans = alpha = 0.95, iteraciones =   106, final = (-0.00, -0.00)
-ans = alpha = 0.98, iteraciones =   270, final = (-0.00, -0.00)
-ans = alpha = 1.00, iteraciones = 10000, final = (-1.50, -2.50)
-ans = alpha = 1.20, iteraciones =  2108, final = (-Inf, NaN)
-ans = ultimo caso hay divergencia. Convergencia si alpha < 1
-\end{verbatim}
+dado en el ejemplo en \(x_0 = (1.5, 2.5)\) se respeta este valor como
+partida, ademas utilizamos una toleracian de \(10e4\). A continuacion se
+presenta los resultados de la computacion de \texttt{pregunta\_1.m} que
+residen en \texttt{resultado\_1.txt} en formato de tabla
+\[
+\begin{array}{c c c}
+  \alpha & \text{iteraciones} & \text{punto-final} \\
+  \hline \\
+  0.10 & 51    & (0.00, 0.00)   \\
+  0.20 & 23    & (0.00, 0.00)   \\
+  0.30 & 13    & (0.00, 0.00)   \\
+  0.50 & 2     & (0.00, 0.00)   \\
+  0.70 & 13    & (0.00, 0.00)   \\
+  0.75 & 17    & (0.00, 0.00)   \\
+  0.80 & 23    & (0.00, 0.00)   \\
+  0.85 & 32    & (-0.00, -0.00) \\
+  0.90 & 51    & (0.00, 0.00)   \\
+  0.95 & 106   & (-0.00, -0.00) \\
+  0.98 & 270   & (-0.00, -0.00) \\
+  1.00 & 10000 & (-1.50, -2.50) \\
+  1.20 & 2108  & (-\infty, NaN) \\
+\end{array}
+\]
 Vemos que a medida que el \(\alpha\) tiende a \(1\) le cantidad de
 iteraciones va llegando al maximo predefinido de iteraciones, despues de
 este las soluciones se alejan del minimo \((0,0)\). Por tanto diremos que
@@ -77,20 +82,22 @@ parametros de inicio y toleracia junto con el hessiano de nuestra funcion
   \end{pmatrix}
 \]
 Se obtienen los siguientes resultados
-\begin{verbatim}
-ans = newton ejemplo1: x0 = (1.50, 2.50)
-ans = alpha = 1.00, iteraciones =     2, final = (0.00, 0.00)
-ans = alpha = 1.20, iteraciones =     8, final = (-0.00, -0.00)
-ans = alpha = 1.40, iteraciones =    13, final = (0.00, 0.00)
-ans = alpha = 1.60, iteraciones =    23, final = (0.00, 0.00)
-ans = alpha = 1.80, iteraciones =    51, final = (0.00, 0.00)
-ans = alpha = 1.90, iteraciones =   106, final = (-0.00, -0.00)
-ans = alpha = 1.95, iteraciones =   215, final = (0.00, 0.00)
-ans = alpha = 1.99, iteraciones =  1093, final = (0.00, 0.00)
-ans = alpha = 2.00, iteraciones = 10000, final = (-1.50, -2.50)
-ans = alpha = 2.10, iteraciones =  7433, final = (NaN, NaN)
-ans = ultimo caso hay divergencia. Convergencia si alpha < 2
-\end{verbatim}
+\[
+\begin{array}{c c c}
+  \alpha & \text{iteraciones} & \text{punto-final} \\
+  \hline \\
+  1.00 & 2     & (0.00, 0.00)   \\
+  1.20 & 8     & (-0.00, -0.00) \\
+  1.40 & 13    & (0.00, 0.00)   \\
+  1.60 & 23    & (0.00, 0.00)   \\
+  1.80 & 51    & (0.00, 0.00)   \\
+  1.90 & 106   & (-0.00, -0.00) \\
+  1.95 & 215   & (0.00, 0.00)   \\
+  1.99 & 1093  & (0.00, 0.00)   \\
+  2.00 & 10000 & (-1.50, -2.50) \\
+  2.10 & 7433  & (NaN, NaN)     \\
+\end{array}
+\]
 Por lo que concluimos que para \(\alpha < 2\) hay convergencia.
 
 \subsection*{Ejemplo 2 con maximo descenso}
@@ -98,17 +105,19 @@ Por lo que concluimos que para \(\alpha < 2\) hay convergencia.
 \[ f(x,y) = -10 + 3 x^2 + y^2 \]
 \[ \nabla f (x,y) = [6 x , 2 y ] \]
 Nuestras parametro siguen siendo iguales
-\begin{verbatim}
-ans = maximo descenso ejemplo2: x0 = (1.50, 2.50)
-ans = alpha = 0.20000, iteraciones =    23, final = (0.00, 0.00)
-ans = alpha = 0.25000, iteraciones =    18, final = (-0.00, 0.00)
-ans = alpha = 0.30000, iteraciones =    53, final = (0.00, 0.00)
-ans = alpha = 0.32000, iteraciones =   138, final = (-0.00, 0.00)
-ans = alpha = 0.33000, iteraciones =   566, final = (-0.00, 0.00)
-ans = alpha = 0.33333, iteraciones = 10000, final = (-1.50, 0.00)
-ans = alpha = 0.35000, iteraciones =  7428, final = (NaN, 0.00)
-ans = ultimo caso hay divergencia. Convergencia si alpha < (1/3)
-\end{verbatim}
+\[
+\begin{array}{c c c}
+  \alpha & \text{iteraciones} & \text{punto-final} \\
+  \hline \\
+  0.20000 & 23    & (0.00, 0.00)  \\
+  0.25000 & 18    & (-0.00, 0.00) \\
+  0.30000 & 53    & (0.00, 0.00)  \\
+  0.32000 & 138   & (-0.00, 0.00) \\
+  0.33000 & 566   & (-0.00, 0.00) \\
+  0.33333 & 10000 & (-1.50, 0.00) \\
+  0.35000 & 7428  & (NaN, 0.00)   \\
+\end{array}
+\]
 Por lo que concluimos que para \(\alpha < \frac 1 3 \) hay convergencia.
 
 \subsection*{Ejemplo 2 con metodo de Newton}
@@ -125,19 +134,21 @@ Por lo que concluimos que para \(\alpha < \frac 1 3 \) hay convergencia.
     0 & 0.5
   \end{pmatrix}
 \]
-\begin{verbatim}
-ans = newton ejemplo2: x0 = (1.50, 2.50)
-ans = alpha = 1.40, iteraciones =    14, final = (-0.00, -0.00)
-ans = alpha = 1.60, iteraciones =    24, final = (-0.00, -0.00)
-ans = alpha = 1.80, iteraciones =    53, final = (0.00, 0.00)
-ans = alpha = 1.90, iteraciones =   111, final = (0.00, 0.00)
-ans = alpha = 1.95, iteraciones =   227, final = (0.00, 0.00)
-ans = alpha = 1.98, iteraciones =   573, final = (0.00, 0.00)
-ans = alpha = 1.99, iteraciones =  1150, final = (-0.00, -0.00)
-ans = alpha = 2.00, iteraciones = 10000, final = (-1.50, -2.50)
-ans = alpha = 2.10, iteraciones =  7427, final = (Inf, NaN)
-ans = ultimo caso hay divergencia. Convergencia si alpha < 2
-\end{verbatim}
+\[
+\begin{array}{c c c}
+  \alpha & \text{iteraciones} & \text{punto-final} \\
+  \hline \\
+  1.40 & 14    & (-0.00, -0.00) \\
+  1.60 & 24    & (-0.00, -0.00) \\
+  1.80 & 53    & (0.00, 0.00)   \\
+  1.90 & 111   & (0.00, 0.00)   \\
+  1.95 & 227   & (0.00, 0.00)   \\
+  1.98 & 573   & (0.00, 0.00)   \\
+  1.99 & 1150  & (-0.00, -0.00) \\
+  2.00 & 10000 & (-1.50, -2.50) \\
+  2.10 & 7427  & (Inf, NaN)     \\
+\end{array}
+\]
 por tanto se concluye que para \(\alpha < 2\) se converge.
 
 \section*{Pregunta 2}
@@ -163,16 +174,34 @@ aproximaciones en diferentes parametros se basa en iterar la rutina
 muestran el algoritmo en su mejor forma. A continuacion solo dare un
 esbozo de las computaciones que corresponden al primer parrafo en el
 archivo de resultados \texttt{respuesta\_2.txt}.
-\begin{verbatim}
-ans = x0           alpha lambda iter punto-final   valor
-ans = (1.50, -2.50) 0.525 0.525 10000 (1.01, -16.18) 0.00
-ans = (1.50, 2.50) 0.525 0.250 10000 (6.57, 19.13) 0.00
-ans = (1.50, 2.50) 0.525 0.800 10000 (5.79, 14.19) 0.00
-ans = (0.00, 0.00) 0.525 0.525 10000 (-10.38, -12.78) 0.00
-ans = (1.00, 1.00) 0.525 0.250 10000 (8.87, 18.46) 0.00
-ans = (1.00, 1.00) 0.525 0.800 10000 (7.66, 13.50) 0.00
-ans = (-3.00, -3.00) 0.525 0.525 10000 (-8.29, -14.01) 0.00
-\end{verbatim}
+\[
+\begin{array}{c c c c c c}
+  x_0 & \alpha & \lambda & \text{iteraciones} &
+        (x_{\infty} = \text{punto-final}) & p(x_{\infty}) \\
+  \hline \\
+  (1.50, -2.50)  & 0.250 & 0.250 & 10000 & (1.06, -16.17)   & 0.00 \\
+  (1.50, -2.50)  & 0.588 & 0.588 & 10000 & (1.01, -16.18)   & 0.00 \\
+  (1.50, -2.50)  & 0.925 & 0.925 & 10000 & (1.00, -16.18)   & 0.00 \\
+  (1.50, -2.50)  & 1.263 & 1.263 & 10000 & (0.99, -16.18)   & 0.00 \\
+  (1.50, -2.50)  & 1.600 & 1.600 & 10000 & (0.99, -16.18)   & 0.00 \\
+  (1.50, 2.50)   & 0.250 & 0.588 & 10000 & (5.45, 12.70)    & 0.01 \\
+  (1.50, 2.50)   & 0.588 & 0.925 & 10000 & (5.77, 14.07)    & 0.00 \\
+  (1.50, 2.50)   & 0.925 & 1.263 & 10000 & (5.90, 14.59)    & 0.00 \\
+  (1.50, 2.50)   & 1.263 & 1.600 & 10000 & (5.96, 14.87)    & 0.00 \\
+  (0.00, 0.00)   & 1.600 & 0.250 & 10000 & (-14.05, -22.28) & 0.00 \\
+  (0.00, 0.00)   & 0.250 & 0.925 & 10000 & (-8.17, -8.29)   & 0.01 \\
+  (0.00, 0.00)   & 0.588 & 1.263 & 10000 & (-9.08, -9.96)   & 0.01 \\
+  (0.00, 0.00)   & 0.925 & 1.600 & 10000 & (-9.46, -10.70)  & 0.00 \\
+  (1.00, 1.00)   & 1.263 & 0.250 & 10000 & (9.99, 23.22)    & 0.00 \\
+  (1.00, 1.00)   & 1.600 & 0.588 & 10000 & (9.27, 19.74)    & 0.00 \\
+  (1.00, 1.00)   & 0.250 & 1.263 & 10000 & (6.46, 9.66)     & 0.01 \\
+  (1.00, 1.00)   & 0.588 & 1.600 & 10000 & (7.08, 11.50)    & 0.01 \\
+  (-3.00, -3.00) & 0.925 & 0.250 & 10000 & (-10.19, -20.24) & 0.00 \\
+  (-3.00, -3.00) & 1.263 & 0.588 & 10000 & (-9.38, -17.40)  & 0.00 \\
+  (-3.00, -3.00) & 1.600 & 0.925 & 10000 & (-9.06, -16.37)  & 0.00 \\
+  (-3.00, -3.00) & 0.250 & 1.600 & 10000 & (-6.01, -8.12)   & 0.01 \\
+\end{array}
+\]
 Notemos que para distintos puntos iniciales, consistentemente llegamos al
 tope de iteraciones. Al mismo tiempo siempre y cuando usemos \(\alpha < 1.6,
 \lambda < 1.6\) nuestro punto final, si bien variado obtiene buenos minimos en la funcion objetivo.
@@ -195,36 +224,46 @@ Este corresponde a la primera seccion en el archivo
 la funcion \(f\)
 \[ \nabla f (x,y) = [-400 x (y - x^2) - 2 (1-x),\ 200 (y-x^2)] \]
 Con esto, para \(x_0 = (2.5, 3.5)\) los resultados son los siguientes
-\begin{verbatim}
-ans = x0 = (2.50, 3.50), x1 = (1.79, 3.20), alpha = 0.0001, iter = 10000, valor = 0.62
-ans = x0 = (2.50, 3.50), x1 = (1.61, 2.60), alpha = 0.0003, iter = 10000, valor = 0.37
-ans = x0 = (2.50, 3.50), x1 = (1.44, 2.07), alpha = 0.0004, iter = 10000, valor = 0.19
-ans = x0 = (2.50, 3.50), x1 = (1.28, 1.63), alpha = 0.0006, iter = 10000, valor = 0.08
-ans = x0 = (2.50, 3.50), x1 = (1.14, 1.29), alpha = 0.0007, iter = 10000, valor = 0.02
-ans = x0 = (2.50, 3.50), x1 = (1.02, 1.05), alpha = 0.0009, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (0.99, 0.98), alpha = 0.0010, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.01, 1.01), alpha = 0.0012, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (NaN, Inf), alpha = 0.0013, iter = 11, valor = NaN
-ans = x0 = (2.50, 3.50), x1 = (Inf, Inf), alpha = 0.0015, iter = 10, valor = NaN
-\end{verbatim}
+\[
+\begin{array}{c c c c c}
+  x_0 & (x_{\infty} = \text{punto-final}) & \alpha & \text{iteraciones} &
+    f(x_{\infty}) \\
+  \hline \\
+  (2.50, 3.50) & (1.79, 3.20)     & 0.0001 & 10000 & 0.62 \\
+  (2.50, 3.50) & (1.61, 2.60)     & 0.0003 & 10000 & 0.37 \\
+  (2.50, 3.50) & (1.44, 2.07)     & 0.0004 & 10000 & 0.19 \\
+  (2.50, 3.50) & (1.28, 1.63)     & 0.0006 & 10000 & 0.08 \\
+  (2.50, 3.50) & (1.14, 1.29)     & 0.0007 & 10000 & 0.02 \\
+  (2.50, 3.50) & (1.02, 1.05)     & 0.0009 & 10000 & 0.00 \\
+  (2.50, 3.50) & (0.99, 0.98)     & 0.0010 & 10000 & 0.00 \\
+  (2.50, 3.50) & (1.01, 1.01)     & 0.0012 & 10000 & 0.00 \\
+  (2.50, 3.50) & (NaN, \infty)    & 0.0013 & 11    & NaN  \\
+  (2.50, 3.50) & (\infty, \infty) & 0.0015 & 10    & NaN  \\
+\end{array}
+\]
 lo que nos dice que para este punto inicial, los valores de \(\alpha <
 0.001\) hacen que el metodo converga eventualmente, a pesar de llegar a
 nuestro limite (arbitrario) de iteraciones.
 
 Para \(x_0 = (-1,0)\) hacemos el mismo procedimiento, obteniendo asi los
 siguientes valores
-\begin{verbatim}
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), alpha = 0.0020, iter = 9968, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (0.88, 0.80), alpha = 0.0024, iter = 10000, valor = 0.14
-ans = x0 = (-1.00, 0.00), x1 = (0.78, 0.66), alpha = 0.0028, iter = 10000, valor = 0.26
-ans = x0 = (-1.00, 0.00), x1 = (0.71, 0.56), alpha = 0.0032, iter = 10000, valor = 0.37
-ans = x0 = (-1.00, 0.00), x1 = (0.64, 0.47), alpha = 0.0036, iter = 10000, valor = 0.47
-ans = x0 = (-1.00, 0.00), x1 = (0.65, 0.36), alpha = 0.0039, iter = 10000, valor = 0.51
-ans = x0 = (-1.00, 0.00), x1 = (0.60, 0.30), alpha = 0.0043, iter = 10000, valor = 0.59
-ans = x0 = (-1.00, 0.00), x1 = (0.56, 0.25), alpha = 0.0047, iter = 10000, valor = 0.66
-ans = x0 = (-1.00, 0.00), x1 = (-Inf, Inf), alpha = 0.0051, iter = 11, valor = NaN
-ans = x0 = (-1.00, 0.00), x1 = (0.49, 0.16), alpha = 0.0055, iter = 10000, valor = 0.81
-\end{verbatim}
+\[
+\begin{array}{c c c c c}
+  x_0 & (x_{\infty} = \text{punto-final}) & \alpha & \text{iteraciones} &
+    f(x_{\infty}) \\
+  \hline \\
+  (-1.00, 0.00) & (1.00, 1.00)      & 0.0020 & 9968  & 0.00 \\
+  (-1.00, 0.00) & (0.88, 0.80)      & 0.0024 & 10000 & 0.14 \\
+  (-1.00, 0.00) & (0.78, 0.66)      & 0.0028 & 10000 & 0.26 \\
+  (-1.00, 0.00) & (0.71, 0.56)      & 0.0032 & 10000 & 0.37 \\
+  (-1.00, 0.00) & (0.64, 0.47)      & 0.0036 & 10000 & 0.47 \\
+  (-1.00, 0.00) & (0.65, 0.36)      & 0.0039 & 10000 & 0.51 \\
+  (-1.00, 0.00) & (0.60, 0.30)      & 0.0043 & 10000 & 0.59 \\
+  (-1.00, 0.00) & (0.56, 0.25)      & 0.0047 & 10000 & 0.66 \\
+  (-1.00, 0.00) & (-\infty, \infty) & 0.0051 & 11    & NaN  \\
+  (-1.00, 0.00) & (0.49, 0.16)      & 0.0055 & 10000 & 0.81 \\
+\end{array}
+\]
 notar que tambien utiliza el maximo de iteraciones permitido, sin embargo
 esta relativamente cerca de la solucion \((1,1)\), por lo que diremos que
 para \(\alpha < 0.005\) el metodo de maximo descenso converge.
@@ -239,42 +278,48 @@ para \(\alpha < 0.005\) el metodo de maximo descenso converge.
   \end{pmatrix}
 \]
 Notemos que para el valor \(x_0 = (2.5, 3.5)\) se tiene los siguientes resultados
-\begin{verbatim}
-ans =
-Empieza el segundo
-ans = x0 = (2.50, 3.50), x1 = (3.48, 11.94), alpha = 0.0100, iter = 10000, valor = 8.38
-ans = x0 = (2.50, 3.50), x1 = (0.86, 0.74), alpha = 0.0982, iter = 10000, valor = 0.03
-ans = x0 = (2.50, 3.50), x1 = (1.04, 1.07), alpha = 0.1864, iter = 10000, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.22, 1.43), alpha = 0.2745, iter = 10000, valor = 0.30
-ans = x0 = (2.50, 3.50), x1 = (1.18, 1.38), alpha = 0.3627, iter = 10000, valor = 0.04
-ans = x0 = (2.50, 3.50), x1 = (0.95, 0.89), alpha = 0.4509, iter = 10000, valor = 0.01
-ans = x0 = (2.50, 3.50), x1 = (2.26, 4.76), alpha = 0.5391, iter = 10000, valor = 12.68
-ans = x0 = (2.50, 3.50), x1 = (50.59, 2558.77), alpha = 0.6273, iter = 10000, valor = 2472.66
-ans = x0 = (2.50, 3.50), x1 = (1.40, 1.75), alpha = 0.7155, iter = 10000, valor = 4.73
-ans = x0 = (2.50, 3.50), x1 = (5.50, 30.03), alpha = 0.8036, iter = 10000, valor = 23.44
-ans = x0 = (2.50, 3.50), x1 = (0.68, 0.43), alpha = 0.8918, iter = 10000, valor = 0.23
-ans = x0 = (2.50, 3.50), x1 = (34.41, 1183.79), alpha = 0.9800, iter = 10000, valor = 1148.27
-\end{verbatim}
+\[
+\begin{array}{c c c c c}
+  x_0 & (x_{\infty} = \text{punto-final}) & \alpha & \text{iteraciones} &
+    f(x_{\infty}) \\
+  \hline \\
+  (2.50, 3.50) & (3.48, 11.94)    & 0.0100 & 10000 & 8.38    \\
+  (2.50, 3.50) & (0.86, 0.74)     & 0.0982 & 10000 & 0.03    \\
+  (2.50, 3.50) & (1.04, 1.07)     & 0.1864 & 10000 & 0.00    \\
+  (2.50, 3.50) & (1.22, 1.43)     & 0.2745 & 10000 & 0.30    \\
+  (2.50, 3.50) & (1.18, 1.38)     & 0.3627 & 10000 & 0.04    \\
+  (2.50, 3.50) & (0.95, 0.89)     & 0.4509 & 10000 & 0.01    \\
+  (2.50, 3.50) & (2.26, 4.76)     & 0.5391 & 10000 & 12.68   \\
+  (2.50, 3.50) & (50.59, 2558.77) & 0.6273 & 10000 & 2472.66 \\
+  (2.50, 3.50) & (1.40, 1.75)     & 0.7155 & 10000 & 4.73    \\
+  (2.50, 3.50) & (5.50, 30.03)    & 0.8036 & 10000 & 23.44   \\
+  (2.50, 3.50) & (0.68, 0.43)     & 0.8918 & 10000 & 0.23    \\
+  (2.50, 3.50) & (34.41, 1183.79) & 0.9800 & 10000 & 1148.27 \\
+\end{array}
+\]
 notando que siempre llegamos al maximo de iteraciones para todos los
 \(\alpha\), cuando \(\alpha > 0.92\) nos alejamos de la solucion
 consistentemente y para valores \(\alpha < 0.42\) con nuestro tope de
 iteraciones \(10000\) alcanzamos consistentemente la solucion.
 
 Para \(x_0 = (-1,0)\) se obtiene por otra parte los siguientes resultados
-\begin{verbatim}
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 0.99), alpha = 0.0100, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (20.86, 435.14), alpha = 0.1422, iter = 10000, valor = 395.88
-ans = x0 = (-1.00, 0.00), x1 = (1.05, 1.10), alpha = 0.2744, iter = 10000, valor = 0.01
-ans = x0 = (-1.00, 0.00), x1 = (1.07, 1.14), alpha = 0.4067, iter = 10000, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.12, 1.25), alpha = 0.5389, iter = 10000, valor = 0.02
-ans = x0 = (-1.00, 0.00), x1 = (0.93, 0.84), alpha = 0.6711, iter = 10000, valor = 0.05
-ans = x0 = (-1.00, 0.00), x1 = (-10.63, 112.92), alpha = 0.8033, iter = 10000, valor = 136.03
-ans = x0 = (-1.00, 0.00), x1 = (6.34, 39.69), alpha = 0.9356, iter = 10000, valor = 60.90
-ans = x0 = (-1.00, 0.00), x1 = (-1074417.47, 1154372888868.30), alpha = ...
-    1.0678, iter = 10000, valor = 1154842540277.31
-ans = x0 = (-1.00, 0.00), x1 = (24579.14, 604133898.00), alpha = ...
-    1.2000, iter = 10000, valor = 604118219.94
-\end{verbatim}
+\[
+\begin{array}{c c c c c}
+  x_0 & (x_{\infty} = \text{punto-final}) & \alpha & \text{iteraciones} &
+    f(x_{\infty}) \\
+  \hline \\
+(-1.00, 0.00) & (1.00, 0.99)                    & 0.0100 & 10000 & 0.00   \\
+(-1.00, 0.00) & (20.86, 435.14)                 & 0.1422 & 10000 & 395.88 \\
+(-1.00, 0.00) & (1.05, 1.10)                    & 0.2744 & 10000 & 0.01   \\
+(-1.00, 0.00) & (1.07, 1.14)                    & 0.4067 & 10000 & 0.00   \\
+(-1.00, 0.00) & (1.12, 1.25)                    & 0.5389 & 10000 & 0.02   \\
+(-1.00, 0.00) & (0.93, 0.84)                    & 0.6711 & 10000 & 0.05   \\
+(-1.00, 0.00) & (-10.63, 112.92)                & 0.8033 & 10000 & 136.03 \\
+(-1.00, 0.00) & (6.34, 39.69)                   & 0.9356 & 10000 & 60.90  \\
+(-1.00, 0.00) & (-1074417.47, 1154372888868.30) & 1.0678 & 10000 & NaN \\
+(-1.00, 0.00) & (24579.14, 604133898.00)        & 1.2000 & 10000 & NaN
+\end{array}
+\]
 en todos los casos a costa de mas iteraciones podriamos tener mayor
 precision pero con valores de \(\alpha < 0.75\) para nuestro tope de
 iteraciones se obtienen buenas aproxiamaciones del valor \(x_1\), ademas
@@ -290,24 +335,33 @@ La ultima seccion del archivo. Este metodo para todos los valores de
 converge al valor \((1,1)\) dicho anteriormente. Solo mostraremos una
 pequeña seccion de esta computacion pues todos los resultados son muy
 homogeneos para ambos valores de \(x_0 = (2.5, 3.5), x_0 = (-1,0)\)
-\begin{verbatim}
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.10, iter = 202, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.37, alpha = 0.10, iter = 261, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.50, alpha = 0.37, iter = 82, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.63, iter = 52, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.90, iter = 40, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 0.90, alpha = 1.17, iter = 35, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.17, alpha = 0.10, iter = 491, valor = 0.00
-ans = x0 = (2.50, 3.50), x1 = (1.00, 1.00), lambda = 1.30, alpha = 0.37, iter = 143, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.10, alpha = 0.63, iter = 35, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.23, alpha = 0.90, iter = 25, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.37, alpha = 1.17, iter = 27, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.63, alpha = 0.10, iter = 294, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.77, alpha = 0.37, iter = 91, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 0.90, alpha = 0.63, iter = 57, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.03, alpha = 0.90, iter = 42, valor = 0.00
-ans = x0 = (-1.00, 0.00), x1 = (1.00, 1.00), lambda = 1.17, alpha = 1.17, iter = 33, valor = 0.00
-\end{verbatim}
+
+\[ \begin{matrix}
+    x_{0} & x_{\infty} & \lambda & \alpha & \text{iteraciones} & f(x_{\infty}) \\
+  \end{matrix}
+\]
+\[
+\begin{tabular}{c c c c c c}
+  \hline \\
+(2.50, 3.50)  & (1.00, 1.00) & 0.10 & 0.10 & 202 & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 0.37 & 0.10 & 261 & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 0.50 & 0.37 & 82  & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 0.63 & 0.63 & 52  & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 0.77 & 0.90 & 40  & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 0.90 & 1.17 & 35  & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 1.17 & 0.10 & 491 & 0.00 \\
+(2.50, 3.50)  & (1.00, 1.00) & 1.30 & 0.37 & 143 & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 0.10 & 0.63 & 35  & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 0.23 & 0.90 & 25  & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 0.37 & 1.17 & 27  & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 0.63 & 0.10 & 294 & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 0.77 & 0.37 & 91  & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 0.90 & 0.63 & 57  & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 1.03 & 0.90 & 42  & 0.00 \\
+(-1.00, 0.00) & (1.00, 1.00) & 1.17 & 1.17 & 33  & 0.00 \\
+\end{tabular}
+\]
+
 Algo interesante a considerar es la consistencia de la cantidad de
 iteraciones que le toma llegar al optimo, siempre tomando a lo mas 300
 iteraciones y siempre llegando al punto minimo de la funcion. Podemos
