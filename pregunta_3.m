@@ -21,7 +21,16 @@ puntos = {[2.5 3.5] [-1, 0]};
 formatMax = 'x1 = (%.2f, %.2f), alpha = %.2f, iter = %d, valor = %.2f';
 formatMaxAlt = 'x0 = (%.2f, %.2f), x1 = (%.2f, %.2f), alpha = %.4f, iter = %d, valor = %.2f';
 
-## # ejercicio1
+xAxis = linspace(-5,5,40);
+yAxis = linspace(-5,5,40);
+for i = 1:40
+  for j = 1:40
+    z(i,j) = fun(xAxis(i), yAxis(j));
+  end
+end
+meshc(xAxis, yAxis, z)
+
+# ejercicio1
 for alpha = linspace(0.0001,0.0015,10)
   [iter, x1] = max_descent(maxIter, alpha, fun_grad, puntos{1});
   value = fun(num2cell(x1){:});
