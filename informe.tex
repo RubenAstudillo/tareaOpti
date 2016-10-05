@@ -147,6 +147,35 @@ por tanto se concluye que para \(\alpha < 2\) se converge.
 Utilizando el metodo de \emph{Leverberg-Marquardt}. Intente con distintos
 valores de \(\alpha, \lambda\). Pruebe ademas con los valores iniciales
 \((1.5, -2.5), (1.5, 2.5), (0,0), (1,1), (-3,-3)\). Compare los resultados.
+\newline
+
+Hemos de ver que en esta funcion, las variables solo ocurren dentro de
+sub-expresiones cuadraticas, por lo tanto dado que los parametros son
+positivos el valor minimo de \(p(x,y)\) es tendiente a \((0,0)\). Para
+utilizar el algoritmo de \emph{Leverberg-Marquardt} necesitamos conocer
+el gradiente y hessiano de \(p(x,y)\), las formulas cerradas de estas
+funciones son largas, estan escrita de forma extendida en el archivo
+\texttt{pregunta\_3.m} bajo el nombre de \texttt{fun\_grad} y
+\texttt{fun\_hess} respectivamente. Nuestra estrategia para computar
+aproximaciones en diferentes parametros se basa en iterar la rutina
+\texttt{levenbert} sobre los puntos propuestos, sobre \(\lambda \in
+[0.25, 0.8]\) y \(\alpha \in [0.25, 2.8]\), los cuales son valores que
+muestran el algoritmo en su mejor forma. A continuacion solo dare un
+esbozo de las computaciones que corresponden al primer parrafo en el
+archivo de resultados \texttt{respuesta\_2.txt}.
+\begin{verbatim}
+ans = x0           alpha lambda iter punto-final   valor
+ans = (1.50, -2.50) 0.525 0.525 10000 (1.01, -16.18) 0.00
+ans = (1.50, 2.50) 0.525 0.250 10000 (6.57, 19.13) 0.00
+ans = (1.50, 2.50) 0.525 0.800 10000 (5.79, 14.19) 0.00
+ans = (0.00, 0.00) 0.525 0.525 10000 (-10.38, -12.78) 0.00
+ans = (1.00, 1.00) 0.525 0.250 10000 (8.87, 18.46) 0.00
+ans = (1.00, 1.00) 0.525 0.800 10000 (7.66, 13.50) 0.00
+ans = (-3.00, -3.00) 0.525 0.525 10000 (-8.29, -14.01) 0.00
+\end{verbatim}
+Notemos que para distintos puntos iniciales, consistentemente llegamos al
+tope de iteraciones. Al mismo tiempo siempre y cuando usemos \(\alpha < 1.6,
+\lambda < 1.6\) nuestro punto final, si bien variado obtiene buenos minimos en la funcion objetivo.
 
 \section*{Pregunta 3}
 \noindent Minimice la funcion de \emph{Rosenbrock}
@@ -242,9 +271,9 @@ ans = x0 = (-1.00, 0.00), x1 = (0.93, 0.84), alpha = 0.6711, iter = 10000, valor
 ans = x0 = (-1.00, 0.00), x1 = (-10.63, 112.92), alpha = 0.8033, iter = 10000, valor = 136.03
 ans = x0 = (-1.00, 0.00), x1 = (6.34, 39.69), alpha = 0.9356, iter = 10000, valor = 60.90
 ans = x0 = (-1.00, 0.00), x1 = (-1074417.47, 1154372888868.30), alpha = ...
-  1.0678, iter = 10000, valor = 1154842540277.31
+    1.0678, iter = 10000, valor = 1154842540277.31
 ans = x0 = (-1.00, 0.00), x1 = (24579.14, 604133898.00), alpha = ...
-  1.2000, iter = 10000, valor = 604118219.94
+    1.2000, iter = 10000, valor = 604118219.94
 \end{verbatim}
 en todos los casos a costa de mas iteraciones podriamos tener mayor
 precision pero con valores de \(\alpha < 0.75\) para nuestro tope de
