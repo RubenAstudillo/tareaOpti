@@ -154,7 +154,7 @@ por tanto se concluye que para \(\alpha < 2\) se converge.
 
 \section*{Pregunta 2}
 \noindent Minimice la funcion
-\[ p(x,y) = \frac{1}{1 + (x-2)^2 + 2 (y+1)^2} + \frac{0.7}{1 + (x+1)^2 +
+\[ p(x,y) = - \frac{1}{1 + (x-2)^2 + 2 (y+1)^2} - \frac{0.7}{1 + (x+1)^2 +
     2 (y - 2)^2 } \]
 Utilizando el metodo de \emph{Leverberg-Marquardt}. Intente con distintos
 valores de \(\alpha, \lambda\). Pruebe ademas con los valores iniciales
@@ -163,13 +163,18 @@ valores de \(\alpha, \lambda\). Pruebe ademas con los valores iniciales
 
 Hemos de ver que en esta funcion, las variables solo ocurren dentro de
 sub-expresiones cuadraticas, por lo tanto dado que los parametros son
-positivos el valor minimo de \(p(x,y)\) es tendiente a \((0,0)\). El
-grafico de la funcion podemos corroborar nuestra intuicion.
+negativos, minimizar esta funcion corresponde a entontrar el tope de la
+parabolas invertidas.
 \begin{center}
   \includegraphics[scale=0.8]{pregunta2.png}
 \end{center}
-Por lo que nos da a pensar que el algoritmo va a alejarse de las
-asimptotas. Para utilizar el algoritmo de \emph{Leverberg-Marquardt}
+Vemos que la funcion tiene dos minimos, el local que se alcanza en el
+punto \(z_0 = (-1, 2),\ p(z_0) = 0.74\) y uno global en \(z_1 = (2,-1),\
+p(z_1) = -1.03\). Dado los diferentes puntos iniciales, dependiendo de su
+cercania a alguna de estos dos minimos es a donde su convergencia deberia
+apuntar.
+
+Para utilizar el algoritmo de \emph{Leverberg-Marquardt}
 necesitamos conocer el gradiente y hessiano de \(p(x,y)\), las formulas
 cerradas de estas funciones son largas, estan escrita de forma extendida
 en el archivo \texttt{pregunta\_3.m} bajo el nombre de \texttt{fun\_grad}
@@ -177,41 +182,104 @@ y \texttt{fun\_hess} respectivamente. Nuestra estrategia para computar
 aproximaciones en diferentes parametros se basa en iterar la rutina
 \texttt{levenbert} sobre los puntos propuestos, sobre \(\lambda \in
 [0.25, 1.6]\) y \(\alpha \in [0.25, 1.6]\), los cuales son valores que
-muestran el algoritmo en su mejor forma. A continuacion solo dare un
-esbozo de las computaciones que corresponden al primer parrafo en el
-archivo de resultados \texttt{respuesta\_2.txt}.
+muestran el algoritmo en su mejor forma. Tambien mostrare en forma de
+tabla lo que considero importante de cada punto inicial
+
+\subsection*{Caso \(x_0 = (1.5, -2.5)\)}
+Este punto inicial esta mas cercano a \(z_1 = (2, -1)\), pues \(\lVert
+x_0 - z_1 \rVert = 1.58,\ \lVert x_0 - z_0 \rVert = 5.14\), y en efecto
+es a este valor donde en el rango de \(\alpha, \lambda\) dicho
+anteriormente converge
 \[
 \begin{array}{c c c c c c}
-  x_0 & \alpha & \lambda & \text{iteraciones} &
-        (x_{\infty} = \text{punto-final}) & p(x_{\infty}) \\
+  x_0 & \alpha & \lambda & \text{iteraciones} & z_x & p(z_{x}) \\
   \hline \\
-  (1.50, -2.50)  & 0.250 & 0.250 & 10000 & (1.06, -16.17)   & 0.00 \\
-  (1.50, -2.50)  & 0.588 & 0.588 & 10000 & (1.01, -16.18)   & 0.00 \\
-  (1.50, -2.50)  & 0.925 & 0.925 & 10000 & (1.00, -16.18)   & 0.00 \\
-  (1.50, -2.50)  & 1.263 & 1.263 & 10000 & (0.99, -16.18)   & 0.00 \\
-  (1.50, -2.50)  & 1.600 & 1.600 & 10000 & (0.99, -16.18)   & 0.00 \\
-  (1.50, 2.50)   & 0.250 & 0.588 & 10000 & (5.45, 12.70)    & 0.01 \\
-  (1.50, 2.50)   & 0.588 & 0.925 & 10000 & (5.77, 14.07)    & 0.00 \\
-  (1.50, 2.50)   & 0.925 & 1.263 & 10000 & (5.90, 14.59)    & 0.00 \\
-  (1.50, 2.50)   & 1.263 & 1.600 & 10000 & (5.96, 14.87)    & 0.00 \\
-  (0.00, 0.00)   & 1.600 & 0.250 & 10000 & (-14.05, -22.28) & 0.00 \\
-  (0.00, 0.00)   & 0.250 & 0.925 & 10000 & (-8.17, -8.29)   & 0.01 \\
-  (0.00, 0.00)   & 0.588 & 1.263 & 10000 & (-9.08, -9.96)   & 0.01 \\
-  (0.00, 0.00)   & 0.925 & 1.600 & 10000 & (-9.46, -10.70)  & 0.00 \\
-  (1.00, 1.00)   & 1.263 & 0.250 & 10000 & (9.99, 23.22)    & 0.00 \\
-  (1.00, 1.00)   & 1.600 & 0.588 & 10000 & (9.27, 19.74)    & 0.00 \\
-  (1.00, 1.00)   & 0.250 & 1.263 & 10000 & (6.46, 9.66)     & 0.01 \\
-  (1.00, 1.00)   & 0.588 & 1.600 & 10000 & (7.08, 11.50)    & 0.01 \\
-  (-3.00, -3.00) & 0.925 & 0.250 & 10000 & (-10.19, -20.24) & 0.00 \\
-  (-3.00, -3.00) & 1.263 & 0.588 & 10000 & (-9.38, -17.40)  & 0.00 \\
-  (-3.00, -3.00) & 1.600 & 0.925 & 10000 & (-9.06, -16.37)  & 0.00 \\
-  (-3.00, -3.00) & 0.250 & 1.600 & 10000 & (-6.01, -8.12)   & 0.01 \\
+  (1.50, -2.50) & 0.250 & 0.250 & 74     & (2.00, -1.00) & -1.03 \\
+  (1.50, -2.50) & 0.588 & 0.588 & 17     & (2.00, -1.00) & -1.03 \\
+  (1.50, -2.50) & 1.600 & 0.925 & 10000  & (1.15, 24.54) & -0.00 \\
+  (1.50, -2.50) & 1.263 & 1.263 & 13     & (2.00, -1.00) & -1.03 \\
+  (1.50, -2.50) & 1.263 & 1.600 & 12     & (2.00, -1.00) & -1.03 \\
 \end{array}
 \]
-Notemos que para distintos puntos iniciales, consistentemente llegamos al
-tope de iteraciones. Al mismo tiempo siempre y cuando usemos \(\alpha < 1.6,
-\lambda < 1.6\) nuestro punto final, si bien variado (dado el grafico de
-la funcion) obtiene buenos minimos en la funcion objetivo.
+
+\subsection*{Caso \(x_0 = (1.5, 2.5)\)}
+Al contrario del caso anterior, este punto es mas cercado a \(z_0 = (-1,
+2)\), pues \(\lVert x_0 - z_1 \rVert = 3.53,\ \lVert x_0 - z_0 \rVert =
+2.54\). Esto de igual manera se refleja en la convergencia
+\[
+\begin{array}{c c c c c c}
+  x_0 & \alpha & \lambda & \text{iteraciones} & z_x & p(z_{x}) \\
+  \hline \\
+  (1.50, 2.50) & 0.250 & 0.250 & 66 & (-0.99, 1.99) & -0.74 \\
+  (1.50, 2.50) & 0.925 & 0.588 & 16 & (-0.99, 1.99) & -0.74 \\
+  (1.50, 2.50) & 0.588 & 0.925 & 40 & (-0.99, 1.99) & -0.74 \\
+  (1.50, 2.50) & 0.925 & 1.263 & 31 & (-0.99, 1.99) & -0.74 \\
+  (1.50, 2.50) & 0.925 & 1.600 & 39 & (-0.99, 1.99) & -0.74 \\
+  (1.50, 2.50) & 1.600 & 1.600 & 21 & (-0.99, 1.99) & -0.74 \\
+\end{array}
+\]
+
+\subsection*{Caso \(x_0 = (0,0)\)}
+Aqui la norma respecto a este \(x_0\) es igual a \(\lVert z_0 \rVert =
+\lVert z_1 \rVert = 2.23 \), por lo que los valores de \(\alpha,
+\lambda\) toman mayor importancia a decir a que punto se converge. Se
+hace una pequeña muestra de esto
+\[
+\begin{array}{c c c c c c}
+  x_0 & \alpha & \lambda & \text{iteraciones} & z_x & p(z_{x}) \\
+  \hline \\
+  (0.00, 0.00) & 0.250 & 0.250 & 778  & (2.00, -1.00)       & -1.03 \\
+  (0.00, 0.00) & 1.263 & 0.250 & 25   & (-0.99, 1.99)       & -0.74 \\
+  (0.00, 0.00) & 1.263 & 0.588 & 482  & (2.00, -1.00)       & -1.03 \\
+  (0.00, 0.00) & 0.588 & 0.925 & 28   & (2.00, -1.00)       & -1.03 \\
+  (0.00, 0.00) & 0.588 & 1.263 & 36   & (2.00, -1.00)       & -1.03 \\
+  (0.00, 0.00) & 0.588 & 1.600 & 43   & (2.00, -1.00)       & -1.03 \\
+  (0.00, 0.00) & 1.263 & 1.600 & 18   & (2.00, -1.00)       & -1.03 \\
+  (0.00, 0.00) & 0.925 & 0.250 & 10   & (-0.99, 1.99)       & -0.74 \\
+  (0.00, 0.00) & 0.588 & 0.588 & 1352 & (-317.20, -1374.82) & -0.00 \\
+\end{array}
+\]
+En general para el mayor rango de \(\lambda,\alpha\) el algoritmo
+converge al maximo global \(z_1\), puesto que el gradiente es mayor en
+esa direccion y que la norma a ambos es la misma. Solo en combinaciones
+muy especificas de \(\lambda, \alpha\) el minimo local \(z_0\) domina.
+
+\subsection*{Caso \(x_0 = (1,1)\)}
+Este valor, al igual que el caso anterior, tiene igual distancia a ambos
+valores pues \(\lVert x_0 - z_0 \rVert = \lVert x_0 - z_1 \rVert = 2.23 \).
+\[
+\begin{array}{c c c c c c}
+  x_0 & \alpha & \lambda & \text{iteraciones} & z_x & p(z_{x}) \\
+  \hline \\
+  (1.00, 1.00) & 0.250 & 0.250 & 1073 & (2.00, -1.00) & -1.03 \\
+  (1.00, 1.00) & 0.250 & 0.588 & 82 & (-0.99, 1.99) & -0.74 \\
+  (1.00, 1.00) & 0.588 & 0.925 & 52 & (-0.99, 1.99) & -0.74 \\
+  (1.00, 1.00) & 0.925 & 1.263 & 44 & (-0.99, 1.99) & -0.74 \\
+  (1.00, 1.00) & 0.925 & 1.600 & 55 & (-0.99, 1.99) & -0.74 \\
+  (1.00, 1.00) & 1.600 & 1.600 & 31 & (-0.99, 1.99) & -0.74 \\
+\end{array}
+\]
+Para el mayor rango de \(\alpha,\lambda\) el algoritmo converge al minimo
+local \(z_0\) con solo parametros especificos (y a costo de gran numero
+de interaciones) convergiendo \(z_1\).
+
+\subsection*{Caso \(x_0 = (-3, -3)\)}
+\(\lVert x_0 - z_0 \rVert = 4.12 =  \lVert  x_0 - z_1 \rVert \) otro caso
+de normas iguales. Se hace de igual manera una muestra de la computacion.
+\[
+\begin{array}{c c c c c c}
+  x_0 & \alpha & \lambda & \text{iteraciones} & z_x & p(z_{x}) \\
+  \hline \\
+  (-3.00, -3.00) & 0.250 & 0.250 & 133  & (2.00, -1.00) & -1.03 \\
+  (-3.00, -3.00) & 1.600 & 0.250 & 2020 & (-0.99, 1.99) & -0.74 \\
+  (-3.00, -3.00) & 1.600 & 0.588 & 50   & (2.00, -1.00) & -1.03 \\
+  (-3.00, -3.00) & 0.250 & 1.263 & 607  & (2.00, -1.00) & -1.03 \\
+  (-3.00, -3.00) & 0.250 & 1.600 & 764  & (2.00, -1.00) & -1.03 \\
+  (-3.00, -3.00) & 1.263 & 1.600 & 149  & (2.00, -1.00) & -1.03 \\
+\end{array}
+\]
+para el mayor rango de \(\alpha,\lambda\) este punto converge al minimo
+global \(z_1\).
 
 \section*{Pregunta 3}
 \noindent Minimice la funcion de \emph{Rosenbrock}
