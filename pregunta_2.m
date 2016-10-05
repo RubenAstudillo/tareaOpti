@@ -36,3 +36,13 @@ for x0 = 1:5
     end
   end
 end
+
+xAxis = linspace(-10,10,100);
+yAxis = linspace(-10,10,100);
+for x=1:100
+  for y=1:100
+    z(x,y) = fun(xAxis(x), yAxis(y));
+  end
+end
+
+meshc(xAxis, yAxis, z)

@@ -8,6 +8,7 @@
 \usepackage{enumerate}
 \usepackage{polyglossia}
 \usepackage{array}
+\usepackage{graphicx}
 
 \setdefaultlanguage{spanish}
 
@@ -162,15 +163,20 @@ valores de \(\alpha, \lambda\). Pruebe ademas con los valores iniciales
 
 Hemos de ver que en esta funcion, las variables solo ocurren dentro de
 sub-expresiones cuadraticas, por lo tanto dado que los parametros son
-positivos el valor minimo de \(p(x,y)\) es tendiente a \((0,0)\). Para
-utilizar el algoritmo de \emph{Leverberg-Marquardt} necesitamos conocer
-el gradiente y hessiano de \(p(x,y)\), las formulas cerradas de estas
-funciones son largas, estan escrita de forma extendida en el archivo
-\texttt{pregunta\_3.m} bajo el nombre de \texttt{fun\_grad} y
-\texttt{fun\_hess} respectivamente. Nuestra estrategia para computar
+positivos el valor minimo de \(p(x,y)\) es tendiente a \((0,0)\). El
+grafico de la funcion podemos corroborar nuestra intuicion.
+\begin{center}
+  \includegraphics[scale=0.8]{pregunta2.png}
+\end{center}
+Por lo que nos da a pensar que el algoritmo va a alejarse de las
+asimptotas. Para utilizar el algoritmo de \emph{Leverberg-Marquardt}
+necesitamos conocer el gradiente y hessiano de \(p(x,y)\), las formulas
+cerradas de estas funciones son largas, estan escrita de forma extendida
+en el archivo \texttt{pregunta\_3.m} bajo el nombre de \texttt{fun\_grad}
+y \texttt{fun\_hess} respectivamente. Nuestra estrategia para computar
 aproximaciones en diferentes parametros se basa en iterar la rutina
 \texttt{levenbert} sobre los puntos propuestos, sobre \(\lambda \in
-[0.25, 0.8]\) y \(\alpha \in [0.25, 2.8]\), los cuales son valores que
+[0.25, 1.6]\) y \(\alpha \in [0.25, 1.6]\), los cuales son valores que
 muestran el algoritmo en su mejor forma. A continuacion solo dare un
 esbozo de las computaciones que corresponden al primer parrafo en el
 archivo de resultados \texttt{respuesta\_2.txt}.
@@ -204,7 +210,8 @@ archivo de resultados \texttt{respuesta\_2.txt}.
 \]
 Notemos que para distintos puntos iniciales, consistentemente llegamos al
 tope de iteraciones. Al mismo tiempo siempre y cuando usemos \(\alpha < 1.6,
-\lambda < 1.6\) nuestro punto final, si bien variado obtiene buenos minimos en la funcion objetivo.
+\lambda < 1.6\) nuestro punto final, si bien variado (dado el grafico de
+la funcion) obtiene buenos minimos en la funcion objetivo.
 
 \section*{Pregunta 3}
 \noindent Minimice la funcion de \emph{Rosenbrock}
